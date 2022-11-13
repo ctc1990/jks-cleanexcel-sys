@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{94685F90-C678-4B32-BB17-37119320AD29}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CLEANXCEL2._2</RootNamespace>
+    <AssemblyName>CLEANXCEL2.2</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Images\Logos\logo_CX.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Functions\ADS\ADS_ReadWrite.cs" />
+    <Compile Include="Functions\EventNotifier\ADSEventNotification.cs" />
+    <Compile Include="Functions\EventNotifier\AlarmNotification.cs" />
+    <Compile Include="Functions\EventNotifier\LoadingDisplay.cs" />
+    <Compile Include="Functions\EventNotifier\SubProcessNotification.cs" />
+    <Compile Include="Functions\MemoryManagement\Computer.cs" />
+    <Compile Include="Functions\MemoryManagement\Machine.cs" />
+    <Compile Include="Functions\RecipeManagement\BlackBox\ProcessExtraction.cs" />
+    <Compile Include="Functions\RecipeManagement\BlackBox\RecipeModule.cs" />
+    <Compile Include="Functions\RecipeManagement\BlackBox\StatusExtraction.cs" />
+    <Compile Include="Functions\RecipeManagement\RecipeStructure\DS_Recipe.cs" />
+    <Compile Include="Functions\RecipeManagement\RecipeStructure\DataManagement.cs" />
+    <Compile Include="Functions\RecipeManagement\RecipeStructure\SettingsManagement.cs" />
+    <Compile Include="Functions\RecipeManagement\RecipeStructure\StandardCommand.cs" />
+    <Compile Include="Functions\RecipeManagement\RecipeStructure\StatusManagement.cs" />
+    <Compile Include="Functions\RecipeManagement\SubProcessBlock\aVX.cs" />
+    <Compile Include="Functions\RecipeManagement\RecipeStructure\RecipeWriter.cs" />
+    <Compile Include="Functions\RecipeManagement\BlackBox\TimeManagement.cs" />
+    <Compile Include="Functions\RecipeManagement\SubProcessBlock\Calibration.cs" />
+    <Compile Include="Functions\RecipeManagement\SubProcessBlock\Degassing.cs" />
+    <Compile Include="Functions\SQL\Backup.cs" />
+    <Compile Include="Pages\Menu\Alarm\CurrentAlarm.xaml.cs">
+      <DependentUpon>CurrentAlarm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Menu\Alarm\HistoryAlarm.xaml.cs">
+      <DependentUpon>HistoryAlarm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Menu\Alarm\Index.xaml.cs">
+      <DependentUpon>Index.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Menu\Analytics\Index.xaml.cs">
+      <DependentUpon>Index.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Menu\Analytics\Graph.xaml.cs">
+      <DependentUpon>Graph.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Menu\Analytics\StatusDiagram.xaml.cs">
+      <DependentUpon>StatusDiagram.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Menu\Analytics\ValueDiagram.xaml.cs">
+      <DependentUpon>ValueDiagram.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Menu\Bypass\Index.xaml.cs">
+      <DependentUpon>Index.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Menu\Bypass\SchematicsActive.xaml.cs">
+      <DependentUpon>SchematicsActive.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Menu\CurrentStatus\Index.xaml.cs">
+      <DependentUpon>Index.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Menu\CurrentStatus\Schematics.xaml.cs">
+      <DependentUpon>Schematics.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Menu\DefaultSettings\General.xaml.cs">
+      <DependentUpon>General.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Menu\DefaultSettings\Index.xaml.cs">
+      <DependentUpon>Index.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Menu\DefaultSettings\Station1.xaml.cs">
+      <DependentUpon>Station1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Menu\Index.xaml.cs">
+      <DependentUpon>Index.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Menu\Maintenance\Restore.xaml.cs">
+      <DependentUpon>Restore.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Menu\Maintenance\Index.xaml.cs">
+      <DependentUpon>Index.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Menu\Maintenance\Schematics.xaml.cs">
+      <DependentUpon>Schematics.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Menu\Maintenance\Sensor.xaml.cs">
+      <DependentUpon>Sensor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Menu\Operation\Index.xaml.cs">
+      <DependentUpon>Index.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Menu\Operation\Operation.xaml.cs">
+      <DependentUpon>Operation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Menu\RecipeManagement\Index.xaml.cs">
+      <DependentUpon>Index.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Menu\RecipeManagement\Part.xaml.cs">
+      <DependentUpon>Part.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Menu\RecipeManagement\Process.xaml.cs">
+      <DependentUpon>Process.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Menu\RecipeManagement\Recipe.xaml.cs">
+      <DependentUpon>Recipe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Menu\RecipeManagement\SubProcess.xaml.cs">
+      <DependentUpon>SubProcess.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Menu\UnderConstruction\UnderConstruction.xaml.cs">
+      <DependentUpon>UnderConstruction.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Window\WindowsMessageBoxInProgress.xaml.cs">
+      <DependentUpon>WindowsMessageBoxInProgress.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Window\WindowsMessageBox.xaml.cs">
+      <DependentUpon>WindowsMessageBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PassingParameters\RegisterRoles.cs" />
+    <Compile Include="PassingParameters\ToWindowsMessageBox.cs" />
+    <Compile Include="Functions\SQL\Query.cs" />
+    <Compile Include="UserControls\AlarmRow.xaml.cs">
+      <DependentUpon>AlarmRow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Card.xaml.cs">
+      <DependentUpon>Card.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ConditionButton.xaml.cs">
+      <DependentUpon>ConditionButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RecipeTableWithoutUS.xaml.cs">
+      <DependentUpon>RecipeTableWithoutUS.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RecipeTable.xaml.cs">
+      <DependentUpon>RecipeTable.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ConditionPanel.xaml.cs">
+      <DependentUpon>ConditionPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ConditionRow.xaml.cs">
+      <DependentUpon>ConditionRow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Dial.xaml.cs">
+      <DependentUpon>Dial.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DigitalDisplay.xaml.cs">
+      <DependentUpon>DigitalDisplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RadialPBar.xaml.cs">
+      <DependentUpon>RadialPBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RangeSlider.xaml.cs">
+      <DependentUpon>RangeSlider.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Schematics.xaml.cs">
+      <DependentUpon>Schematics.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\aVXTable.xaml.cs">
+      <DependentUpon>aVXTable.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\StandardTable.xaml.cs">
+      <DependentUpon>StandardTable.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Intro.xaml.cs">
+      <DependentUpon>Intro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Pages\User\Index.xaml.cs">
+      <DependentUpon>Index.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\User\Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\User\Register.xaml.cs">
+      <DependentUpon>Register.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\User\Reset.xaml.cs">
+      <DependentUpon>Reset.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\User\Roles.xaml.cs">
+      <DependentUpon>Roles.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Icons\icon_Alarms_Active.svg" />
+    <Content Include="Images\Icons\icon_Credits_Active.svg" />
+    <Content Include="Images\Icons\icon_CurrentStatus_Active.svg" />
+    <Content Include="Images\Icons\icon_DefaultSettings_Active.svg" />
+    <Content Include="Images\Icons\icon_KnowledgeBase_Active.svg" />
+    <Content Include="Images\Icons\icon_LogIn_Active.svg" />
+    <Content Include="Images\Icons\icon_LogOut_Active.svg" />
+    <Content Include="Images\Icons\icon_MaintenanceMode_Active.svg" />
+    <Content Include="Images\Icons\icon_Manuals_Active.svg" />
+    <Content Include="Images\Icons\icon_OperationMode_Active.svg" />
+    <Content Include="Images\Icons\icon_Password_Active.svg" />
+    <Content Include="Images\Icons\icon_RecipeManagement_Active.svg" />
+    <Content Include="Images\Icons\icon_Register_Active.svg" />
+    <Content Include="Images\Icons\icon_Version_Active.svg" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ReferencePath Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\packages\FontAwesome.WPF.4.7.0.9\lib\net40\FontAwesome.WPF.dll" />
+    <ReferencePath Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\packages\Hardcodet.NotifyIcon.Wpf.1.0.8\lib\net451\Hardcodet.Wpf.TaskbarNotification.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Microsoft.CSharp.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\mscorlib.dll" />
+    <ReferencePath Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\packages\MySqlBackup.NET.2.0.11.1\lib\net452\MySql.Data.dll" />
+    <ReferencePath Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\packages\MySqlBackup.NET.2.0.11.1\lib\net452\MySqlBackup.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\PresentationCore.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\PresentationFramework.Aero.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\PresentationFramework.dll" />
+    <ReferencePath Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\bin\Debug\SharpVectors.Converters.dll" />
+    <ReferencePath Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\bin\Debug\SharpVectors.Core.dll" />
+    <ReferencePath Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\bin\Debug\SharpVectors.Css.dll" />
+    <ReferencePath Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\bin\Debug\SharpVectors.Dom.dll" />
+    <ReferencePath Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\bin\Debug\SharpVectors.Model.dll" />
+    <ReferencePath Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\bin\Debug\SharpVectors.Rendering.Wpf.dll" />
+    <ReferencePath Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\bin\Debug\SharpVectors.Runtime.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Configuration.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Core.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Data.DataSetExtensions.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Data.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Drawing.dll" />
+    <ReferencePath Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Windows.Forms.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Xaml.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Xml.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Xml.Linq.dll" />
+    <ReferencePath Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\bin\Debug\TwinCAT.Ads.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\WindowsBase.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Intro.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\MainWindow.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Pages\Menu\Alarm\CurrentAlarm.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Pages\Menu\Alarm\HistoryAlarm.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Pages\Menu\Alarm\Index.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Pages\Menu\Analytics\Index.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Pages\Menu\Analytics\Graph.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Pages\Menu\Analytics\StatusDiagram.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Pages\Menu\Analytics\ValueDiagram.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Pages\Menu\Bypass\Index.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Pages\Menu\Bypass\SchematicsActive.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Pages\Menu\CurrentStatus\Index.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Pages\Menu\CurrentStatus\Schematics.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Pages\Menu\DefaultSettings\General.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Pages\Menu\DefaultSettings\Index.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Pages\Menu\DefaultSettings\Station1.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Pages\Menu\Index.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Pages\Menu\Maintenance\Restore.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Pages\Menu\Maintenance\Index.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Pages\Menu\Maintenance\Schematics.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Pages\Menu\Maintenance\Sensor.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Pages\Menu\Operation\Index.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Pages\Menu\Operation\Operation.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Pages\Menu\RecipeManagement\Index.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Pages\Menu\RecipeManagement\Part.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Pages\Menu\RecipeManagement\Process.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Pages\Menu\RecipeManagement\Recipe.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Pages\Menu\RecipeManagement\SubProcess.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Pages\Menu\UnderConstruction\UnderConstruction.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Pages\User\Index.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Pages\User\Login.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Pages\User\Register.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Pages\User\Reset.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Pages\User\Roles.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Pages\Window\WindowsMessageBoxInProgress.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\Pages\Window\WindowsMessageBox.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\UserControls\AlarmRow.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\UserControls\Card.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\UserControls\ConditionButton.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\UserControls\RecipeTableWithoutUS.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\UserControls\RecipeTable.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\UserControls\ConditionPanel.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\UserControls\ConditionRow.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\UserControls\Dial.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\UserControls\DigitalDisplay.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\UserControls\RadialPBar.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\UserControls\RangeSlider.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\UserControls\Schematics.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\UserControls\aVXTable.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\UserControls\StandardTable.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\App.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\CLEANXCEL2.2_Content.g.cs" />
+    <Compile Include="C:\Users\tzechiatc\Dropbox\Working Related\FE UPDATED SOFWARE\FE LAB - 6 valve Schematic with other update\CLEANXCEL2.2 - Backup\CLEANXCEL2.2\obj\Debug\GeneratedInternalTypeHelper.g.cs" />
+  </ItemGroup>
+</Project>

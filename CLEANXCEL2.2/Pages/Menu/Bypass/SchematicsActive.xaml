@@ -1,0 +1,1315 @@
+﻿<Page x:Class="CLEANXCEL2._2.Pages.Menu.Bypass.SchematicsActive"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:usercontrols="clr-namespace:CLEANXCEL2._2.UserControls"
+      xmlns:local="clr-namespace:CLEANXCEL2._2.Pages.Menu.Bypass"
+      mc:Ignorable="d" 
+      Loaded="Page_Loaded"
+      Unloaded="Page_Unloaded"
+      xmlns:svgc="http://sharpvectors.codeplex.com/svgc/"
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="SchematicsActive">
+
+    <Grid Margin="30">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Viewbox Grid.Column="0" Stretch="Uniform" Margin="0,-40" Loaded="Viewbox_Loaded">
+            <Grid Name="SchematicDiagram" HorizontalAlignment="Center" Margin="0"
+                  Opacity="1">
+
+                <svgc:SvgViewbox Source="/Images/Schematic/Schematic.svg"
+                                 HorizontalAlignment="Left"
+                                 Panel.ZIndex="4"
+                                 Margin="40,40,40,80"
+                                 Height="760"/>
+
+                <!-- EQUIPMENTS-->
+
+                <ToggleButton Name="US"
+                              Panel.ZIndex="10"
+                              Cursor="Hand"
+                              Click="EquipmentTrigger_Click"
+                              Width="204"
+                              HorizontalAlignment="Left"
+                              Background="Transparent"
+                              Style="{StaticResource StyleToggleButtonUS}" RenderTransformOrigin="0.5,0.5" Margin="-14,315,0,394"
+                              >
+                    <ToggleButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="311" Y="-191"/>
+                        </TransformGroup>
+                    </ToggleButton.RenderTransform>
+                </ToggleButton>
+
+                <ToggleButton Name="Door"
+                              Panel.ZIndex="11"
+                              IsEnabled="False"
+                              Cursor="Hand"
+                              HorizontalAlignment="Left"
+                              Click="EquipmentTrigger_Click"
+                              Background="Transparent"
+                              Style="{StaticResource StyleToggleButtonDoor}"
+                              Width="131" 
+                              RenderTransformOrigin="0.5,0.5" Margin="-27,352,0,421"
+                              >
+                    <ToggleButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="361" Y="-238"/>
+                        </TransformGroup>
+                    </ToggleButton.RenderTransform>
+                </ToggleButton>
+
+                <ToggleButton Name="H1"
+                              IsEnabled="False"
+                              Panel.ZIndex="12"
+                              Cursor="Hand"
+                              Height="50"
+                              Click="EquipmentTrigger_Click"
+                              HorizontalAlignment="Left"
+                              Background="Transparent"
+                              Style="{StaticResource StyleToggleButtonHeater}" RenderTransformOrigin="0.5,0.5" Margin="-68,379,0,475">
+                    <ToggleButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="510" Y="200"/>
+                        </TransformGroup>
+                    </ToggleButton.RenderTransform>
+                </ToggleButton>
+
+                <ToggleButton Name="H2"
+                              IsEnabled="False"
+                              Panel.ZIndex="12"
+                              Cursor="Hand"
+                              Height="50"
+                              Click="EquipmentTrigger_Click"
+                              HorizontalAlignment="Left"
+                              Background="Transparent"
+                              Style="{StaticResource StyleToggleButtonHeater}" RenderTransformOrigin="0.5,0.5" Margin="-37,379,0,475"
+                              >
+                    <ToggleButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="393" Y="200"/>
+                        </TransformGroup>
+                    </ToggleButton.RenderTransform>
+                </ToggleButton>
+
+                <ToggleButton Name="H3"
+                              Panel.ZIndex="12"
+                              Cursor="Hand"
+                              Height="50"
+                              Click="EquipmentTrigger_Click"
+                              HorizontalAlignment="Left"
+                              Background="Transparent"
+                              Style="{StaticResource StyleToggleButtonHeater}" 
+                              RenderTransformOrigin="0.5,0.5" Margin="39,334,0,520"
+                              >
+                    <ToggleButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="121" Y="200"/>
+                        </TransformGroup>
+                    </ToggleButton.RenderTransform>
+                </ToggleButton>
+
+                <ToggleButton Name="P1"
+                              Panel.ZIndex="12"
+                              Height="58"
+                              Click="EquipmentTrigger_Click"
+                              HorizontalAlignment="Left"
+                              Background="Transparent"
+                              Style="{StaticResource StyleToggleButtonPump}" RenderTransformOrigin="0.5,0.5" Margin="-49,365,0,481"
+                              >
+                    <ToggleButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="447" Y="357"/>
+                        </TransformGroup>
+                    </ToggleButton.RenderTransform>
+                </ToggleButton>
+
+                <ToggleButton Name="PV1"
+                              Panel.ZIndex="12"
+                              Cursor="Hand"
+                              Height="58"
+                              Click="EquipmentTrigger_Click"
+                              HorizontalAlignment="Left"
+                              Background="Transparent"
+                              Style="{StaticResource StyleToggleButtonPump}" 
+                              RenderTransformOrigin="0.5,0.5" Margin="-130,411,0,435"
+                              >
+                    <ToggleButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="733" Y="-322"/>
+                        </TransformGroup>
+                    </ToggleButton.RenderTransform>
+                </ToggleButton>
+
+                <ToggleButton Name="P2"
+                              IsEnabled="False"
+                              Panel.ZIndex="12"
+                              Cursor="Hand"
+                              Height="58"
+                              Click="EquipmentTrigger_Click"
+                              HorizontalAlignment="Left"
+                              Background="Transparent"
+                              Style="{StaticResource StyleToggleButtonPump}" RenderTransformOrigin="0.5,0.5" Margin="-42,407,0,439"
+                              >
+                    <ToggleButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="412" Y="-19"/>
+                        </TransformGroup>
+                    </ToggleButton.RenderTransform>
+                </ToggleButton>
+
+                <ToggleButton Name="CH1"
+                              Panel.ZIndex="12"
+                              IsEnabled="False"
+                              Cursor="Hand"
+                              Width="50"
+                              Click="EquipmentTrigger_Click"
+                              HorizontalAlignment="Left"
+                              Background="Transparent"
+                              Style="{StaticResource StyleToggleButtonRefrigerator}" RenderTransformOrigin="0.5,0.5" Margin="68,410,0,421"
+                              >
+                    <ToggleButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="-368" X="-7"/>
+                        </TransformGroup>
+                    </ToggleButton.RenderTransform>
+                </ToggleButton>
+
+                <!-- Valves -->
+
+                <ToggleButton Name="AV1_1"
+                              IsEnabled="False"
+                              Panel.ZIndex="12"
+                              Cursor="Hand"
+                              Click="EquipmentTrigger_Click"
+                              HorizontalAlignment="Left"
+                              Background="Transparent"
+                              Style="{StaticResource StyleToggleButtonAirValve}"
+                              RenderTransformOrigin="0.5,0.5" Margin="-68,388,0,486">
+                    <ToggleButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="90"/>
+                            <TranslateTransform X="527" Y="281"/>
+                        </TransformGroup>
+                    </ToggleButton.RenderTransform>
+                </ToggleButton>
+
+                <ToggleButton Name="AV1_11"
+                              IsEnabled="False"
+                              Panel.ZIndex="12"
+                              Cursor="Hand"
+                              Click="EquipmentTrigger_Click"
+                              HorizontalAlignment="Left"
+                              Background="Transparent"
+                              Style="{StaticResource StyleToggleButtonAirValve}"
+                              RenderTransformOrigin="0.5,0.5" Margin="-10,373,0,501">
+                    <ToggleButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="90"/>
+                            <TranslateTransform Y="-80" X="317"/>
+                        </TransformGroup>
+                    </ToggleButton.RenderTransform>
+                </ToggleButton>
+
+                <ToggleButton Name="AV1_3"
+                              IsEnabled="False"
+                              Panel.ZIndex="12"
+                              Cursor="Hand"
+                              Click="EquipmentTrigger_Click"
+                              HorizontalAlignment="Left"
+                              Background="Transparent"
+                              Style="{StaticResource StyleToggleButtonAirValve}"
+                              RenderTransformOrigin="0.5,0.5" Margin="-42,373,0,501">
+                    <ToggleButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="90"/>
+                            <TranslateTransform Y="-80" X="434"/>
+                        </TransformGroup>
+                    </ToggleButton.RenderTransform>
+                </ToggleButton>
+
+                <ToggleButton Name="AV1_4"
+                              IsEnabled="False"
+                              Panel.ZIndex="12"
+                              Cursor="Hand"
+                              Click="EquipmentTrigger_Click"
+                              HorizontalAlignment="Left"
+                              Background="Transparent"
+                              Style="{StaticResource StyleToggleButtonAirValve}"
+                              RenderTransformOrigin="0.5,0.5" Margin="-68,523,0,568">
+                    <ToggleButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="90"/>
+                            <TranslateTransform X="527" Y="86"/>
+                        </TransformGroup>
+                    </ToggleButton.RenderTransform>
+                </ToggleButton>
+
+                <ToggleButton Name="AV1_5"
+                              IsEnabled="False"
+                              Panel.ZIndex="12"
+                              Cursor="Hand"
+                              Click="EquipmentTrigger_Click"
+                              HorizontalAlignment="Left"
+                              Background="Transparent"
+                              Style="{StaticResource StyleToggleButtonAirValve}"
+                              RenderTransformOrigin="0.5,0.5" Margin="-41,387,0,487">
+                    <ToggleButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="90"/>
+                            <TranslateTransform Y="281" X="433"/>
+                        </TransformGroup>
+                    </ToggleButton.RenderTransform>
+                </ToggleButton>
+
+                <ToggleButton Name="AV1_6"
+                              IsEnabled="False"
+                              Panel.ZIndex="12"
+                              Cursor="Hand"
+                              Click="EquipmentTrigger_Click"
+                              HorizontalAlignment="Left"
+                              Background="Transparent"
+                              Style="{StaticResource StyleToggleButtonAirValve}"
+                              RenderTransformOrigin="0.5,0.5" Margin="-42,522,0,569">
+                    <ToggleButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="90"/>
+                            <TranslateTransform Y="86" X="433"/>
+                        </TransformGroup>
+                    </ToggleButton.RenderTransform>
+                </ToggleButton>
+
+                <ToggleButton Name="AV1_7"                              
+                              IsEnabled="False"
+                              Panel.ZIndex="12"
+                              Cursor="Hand"
+                              Click="EquipmentTrigger_Click"
+                              HorizontalAlignment="Left"
+                              Background="Transparent"
+                              Style="{StaticResource StyleToggleButtonAirValve}"
+                              RenderTransformOrigin="0.5,0.5" Margin="65,310,0,564">
+                    <ToggleButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="90"/>
+                            <TranslateTransform X="37" Y="-80"/>
+                        </TransformGroup>
+                    </ToggleButton.RenderTransform>
+                </ToggleButton>
+
+                <ToggleButton Name="AV1_8"
+                              IsEnabled="False"
+                              Panel.ZIndex="12"
+                              Cursor="Hand"
+                              Click="EquipmentTrigger_Click"
+                              HorizontalAlignment="Left"
+                              Background="Transparent"
+                              Style="{StaticResource StyleToggleButtonAirValve}"
+                              RenderTransformOrigin="0.5,0.5" Margin="-109,426,0,448">
+                    <ToggleButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="600" Y="-72"/>
+                        </TransformGroup>
+                    </ToggleButton.RenderTransform>
+                </ToggleButton>
+
+                <ToggleButton Name="AV1_9"
+                              IsEnabled="False"
+                              Panel.ZIndex="12"
+                              Cursor="Hand"
+                              Click="EquipmentTrigger_Click"
+                              HorizontalAlignment="Left"
+                              Background="Transparent"
+                              Style="{StaticResource StyleToggleButtonAirValve}"
+                              RenderTransformOrigin="0.5,0.5" Margin="-8,426,0,665">
+                    <ToggleButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="90"/>
+                            <TranslateTransform X="200" Y="348"/>
+                        </TransformGroup>
+                    </ToggleButton.RenderTransform>
+                </ToggleButton>
+
+                <ToggleButton Name="AV1_10"                            
+                              IsEnabled="False"
+                              Panel.ZIndex="12"
+                              Cursor="Hand"
+                              Click="EquipmentTrigger_Click"
+                              HorizontalAlignment="Left"
+                              Background="Transparent"
+                              IsChecked="{Binding bitMap[21], Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                              Style="{StaticResource StyleToggleButtonAirValve}"
+                              RenderTransformOrigin="0.5,0.5" Margin="34,308,0,566">
+                    <ToggleButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="90"/>
+                            <TranslateTransform X="159" Y="-80"/>
+                        </TransformGroup>
+                    </ToggleButton.RenderTransform>
+                </ToggleButton>
+
+                <ToggleButton Name="AV1_2"
+                              IsEnabled="False"
+                              Panel.ZIndex="12"
+                              Cursor="Hand"
+                              Click="EquipmentTrigger_Click"
+                              HorizontalAlignment="Left"
+                              Background="Transparent"
+                              Style="{StaticResource StyleToggleButtonAirValve}"
+                              RenderTransformOrigin="0.5,0.5" Margin="-3,437,0,437">
+                    <ToggleButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="90"/>
+                            <TranslateTransform X="258" Y="86"/>
+                        </TransformGroup>
+                    </ToggleButton.RenderTransform>
+                </ToggleButton>
+
+                <ToggleButton Name="AV1_12"
+                              IsEnabled="False"
+                              Panel.ZIndex="12"
+                              Cursor="Hand"
+                              Click="EquipmentTrigger_Click"
+                              HorizontalAlignment="Left"
+                              Background="Transparent"
+                              Style="{StaticResource StyleToggleButtonAirValve}"
+                              RenderTransformOrigin="0.5,0.5" Margin="45,359,0,515">
+                    <ToggleButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="90"/>
+                            <TranslateTransform X="118" Y="86"/>
+                        </TransformGroup>
+                    </ToggleButton.RenderTransform>
+                </ToggleButton>
+
+                <ToggleButton Name="AV1_13"
+                              IsEnabled="False"
+                              Panel.ZIndex="12"
+                              Cursor="Hand"
+                              Click="EquipmentTrigger_Click"
+                              HorizontalAlignment="Left"
+                              Background="Transparent"
+                              Style="{StaticResource StyleToggleButtonAirValve}"
+                              RenderTransformOrigin="0.5,0.5" Margin="-109,409,0,465">
+                    <ToggleButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="646" Y="-277"/>
+                        </TransformGroup>
+                    </ToggleButton.RenderTransform>
+                </ToggleButton>
+
+                <ToggleButton Name="AV1_15"
+                              IsEnabled="False"
+                              Panel.ZIndex="12"
+                              Cursor="Hand"
+                              Click="EquipmentTrigger_Click"
+                              HorizontalAlignment="Left"
+                              Background="Transparent"
+                              Style="{StaticResource StyleToggleButtonPistonValve}"
+                              RenderTransformOrigin="0.5,0.5" Margin="-117,373,0,501">
+                    <ToggleButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="90"/>
+                            <TranslateTransform Y="-120" X="703"/>
+                        </TransformGroup>
+                    </ToggleButton.RenderTransform>
+                </ToggleButton>
+
+                <ToggleButton Name="AV1_16"
+                              IsEnabled="False"
+                              Panel.ZIndex="12"
+                              Cursor="Hand"
+                              Click="EquipmentTrigger_Click"
+                              HorizontalAlignment="Left"
+                              Background="Transparent"
+                              Style="{StaticResource StyleToggleButtonPistonValve}"
+                              RenderTransformOrigin="0.5,0.5" Margin="-109,210,0,664">
+                    <ToggleButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="646" Y="-25"/>
+                        </TransformGroup>
+                    </ToggleButton.RenderTransform>
+                </ToggleButton>
+
+                <ToggleButton Name="AV1_17"
+                              IsEnabled="False"
+                              Panel.ZIndex="12"
+                              Cursor="Hand"
+                              Click="EquipmentTrigger_Click"
+                              HorizontalAlignment="Left"
+                              Background="Transparent"
+                              Style="{StaticResource StyleToggleButtonAirValve}"
+                              RenderTransformOrigin="0.5,0.5" Margin="-82,416,0,458">
+                    <ToggleButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="567" Y="-301"/>
+                        </TransformGroup>
+                    </ToggleButton.RenderTransform>
+                </ToggleButton>
+
+                <ToggleButton Name="SV1_1"
+                              IsEnabled="False"
+                              Panel.ZIndex="12"
+                              Cursor="Hand"
+                              Click="EquipmentTrigger_Click"
+                              HorizontalAlignment="Left"
+                              Background="Transparent"
+                              Style="{StaticResource StyleToggleButtonSolenoidValve}"
+                              RenderTransformOrigin="0.5,0.5" Margin="-29,421,0,453">
+                    <ToggleButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="519" Y="-27"/>
+                        </TransformGroup>
+                    </ToggleButton.RenderTransform>
+                </ToggleButton>
+
+                <!-- NAMES -->
+
+                <TextBlock Name="ProcessChamber" 
+                           Text="PROCESS CHAMBER"
+                           Panel.ZIndex="14"
+                           TextAlignment="Center"
+                           Style="{StaticResource SchName}" RenderTransformOrigin="0.5,0.5" Margin="323,405,407,469">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="38" Y="-250"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="WaterSeparator" 
+                           Text="WATER SEPARATOR"
+                           Panel.ZIndex="14"
+                           TextAlignment="Center"
+                           Style="{StaticResource SchName}" RenderTransformOrigin="0.5,0.5" Margin="410,438,320,436">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="-362" X="-280"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="DistillerTank" 
+                           Text="DISTILLATION TANK"
+                           Panel.ZIndex="14"
+                           Width="70"
+                           TextAlignment="Center"
+                           Style="{StaticResource SchName}" RenderTransformOrigin="0.5,0.5" Margin="408,344,330,530">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="-258" Y="164"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="StorageTank1" 
+                           Text="SUB-TANK 1"
+                           Panel.ZIndex="14"
+                           TextAlignment="Center"
+                           Width="Auto"
+                           Style="{StaticResource SchName}" RenderTransformOrigin="0.5,0.5" Margin="304,506,442,585">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="162" X="131"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="StorageTank2" 
+                           Text="SUB-TANK 2"
+                           Panel.ZIndex="14"
+                           Width="Auto"
+                           TextAlignment="Center"
+                           Style="{StaticResource SchName}" RenderTransformOrigin="0.5,0.5" Margin="333,507,416,584">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="162" X="20"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="VacuumPump" 
+                           Text="VACUUM PUMP"
+                           Panel.ZIndex="14"
+                           Width="50"
+                           TextAlignment="Right"
+                           Style="{StaticResource SchName}" RenderTransformOrigin="0.5,0.5" Margin="347,402,411,472">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="298" Y="-320"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="CentrifugalPump" 
+                           Text="CENTRIFUGAL PUMP"
+                           Panel.ZIndex="14"
+                           TextAlignment="Right"
+                           Style="{StaticResource SchName}" RenderTransformOrigin="0.5,0.5" Margin="386,442,347,432">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="344"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="AirPump" 
+                           Text="AIR PUMP"
+                           Panel.ZIndex="14"
+                           TextAlignment="Right"
+                           Width="30"
+                           Style="{StaticResource SchName}" 
+                           RenderTransformOrigin="0.5,0.5" Margin="347,417,431,457">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="-12" Y="-15"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="Refrigerator" 
+                           Text="REFRIGERATOR"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchName}" RenderTransformOrigin="0.5,0.5" Margin="436,425,294,434">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="-392" X="-384"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="SourceCDASupply" 
+                           Text="CDA SUPPLY"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchSourceName}" 
+                           RenderTransformOrigin="0.5,0.5"
+                           Width="50" Margin="243,425,515,449">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="398" Y="-19"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="SourceSolventSupply" 
+                           Text="SOLVENT SUPPLY"
+                           Panel.ZIndex="14"
+                           Width="54"
+                           Style="{StaticResource SchSourceName}" RenderTransformOrigin="0.5,0.5" Margin="241,425,513,449">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="398" Y="-60"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <!-- LABELS -->
+
+                <TextBlock Name="LBLAV101" 
+                           Text="AV1-1"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="256,392,517,496">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="286" X="176"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="LBLAV102" 
+                           Text="AV1-2"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="382,440,392,448">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="-93" Y="90"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="LBLAV103" 
+                           Text="AV1-3"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="344,380,429,508">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="82" Y="-76"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="LBLAV104" 
+                           Text="AV1-4"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="318,531,455,574">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="176" Y="91"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="LBLAV105" 
+                           Text="AV1-5"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="276,389,497,499">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="82" Y="286"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="LBLAV106" 
+                           Text="AV1-6"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="276,528,497,577">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="82" Y="91"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="LBLAV107" 
+                           Text="AV1-7"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="451,316,320,572">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="-310" Y="-75"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="LBLAV108" 
+                           Text="AV1-8"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="277,433,496,455">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="217" Y="-90"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="LBLAV109" 
+                           Text="AV1-9"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="338,452,435,653">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="330" X="-186"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="LBLAV110" 
+                           Text="AV1-10"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="420,315,351,573">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="-193" Y="-75"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="LBLAV111" 
+                           Text="AV1-11"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="306,375,467,513">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="-35" Y="-75"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="LBLAV112" 
+                           Text="AV1-12"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="431,366,341,522">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="91" X="-303"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="LBLAV113" 
+                           Text="AV1-13"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="277,416,494,472">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="260" Y="-295"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="LBLAV115" 
+                           Text="AV1-15"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="269,380,502,508">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="352" Y="-116"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="LBLAV116" 
+                           Text="AV1-16"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="277,405,494,483">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="260" Y="-232"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="LBLAV117" 
+                           Text="AV1-17"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="304,423,467,465">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="180" Y="-318"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="LBLSV101" 
+                           Text="SV1-1"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="357,474,416,414">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="135" Y="-45"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="LBLCH1" 
+                           Text="CH1"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="456,431,314,442">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="-378" Y="-415"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="LBLP1" 
+                           Text="P1"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="325,373,448,515">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="120" Y="343"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="LBLP2" 
+                           Text="P2"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="344,428,429,460">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="5" Y="-1"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="LBLV1" 
+                           Text="PV1"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}"
+                           RenderTransformOrigin="0.5,0.5" Margin="342,423,431,465">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="327" Y="-306"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="LBLUS1" 
+                           Text="US1"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="286,465,485,423">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="-250" X="193"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="LBLUS2" 
+                           Text="US2"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="337,389,434,499">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="-116" X="110"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="LBLUS3" 
+                           Text="US3"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="349,389,422,499">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="-116" X="-23"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="LBLUS4" 
+                           Text="US4"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="376,430,395,458">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="-250" X="-104"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="LBLH1" 
+                           Text="H1"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="317,396,456,492">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="240" X="141"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="LBLH2" 
+                           Text="H2"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="349,396,424,492">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="240" X="24"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="LBLH3" 
+                           Text="H3"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="426,350,347,538">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="-249" Y="240"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <!-- New Added -->
+                <ToggleButton Name="AV1_19"
+                              IsEnabled="False"
+                              Panel.ZIndex="12"
+                              Cursor="Hand"
+                             Click="EquipmentTrigger_Click"
+                              HorizontalAlignment="Left"
+                              Background="Transparent"
+                              Style="{StaticResource StyleToggleButtonAirValve}"
+                              RenderTransformOrigin="0.5,0.5" Margin="24,-120,0,994">
+                    <ToggleButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="90"/>
+                            <TranslateTransform X="600" Y="281"/>
+                        </TransformGroup>
+                    </ToggleButton.RenderTransform>
+                </ToggleButton>
+
+                <ToggleButton Name="AV1_22"
+                              IsEnabled="False"
+                              Panel.ZIndex="12"
+                              Cursor="Hand"
+                              Click="EquipmentTrigger_Click"
+                              HorizontalAlignment="Left"
+                              Background="Transparent"
+                              Style="{StaticResource StyleToggleButtonAirValve}"
+                              RenderTransformOrigin="0.5,0.5" Margin="-319,406,0,468">
+                    <ToggleButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="90"/>
+                            <TranslateTransform X="620" Y="281"/>
+                        </TransformGroup>
+                    </ToggleButton.RenderTransform>
+                </ToggleButton>
+
+                <ToggleButton Name="AV1_23"
+                              IsEnabled="False"
+                              Panel.ZIndex="12"
+                              Cursor="Hand"
+                              Click="EquipmentTrigger_Click"
+                              HorizontalAlignment="Left"
+                              Background="Transparent"
+                              Style="{StaticResource StyleToggleButtonAirValve}"
+                              RenderTransformOrigin="0.5,0.5" Margin="-311,41,0,833">
+                    <ToggleButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90.035"/>
+                            <TranslateTransform X="640" Y="281"/>
+                        </TransformGroup>
+                    </ToggleButton.RenderTransform>
+                </ToggleButton>
+
+                <ToggleButton Name="AV1_24"
+                              IsEnabled="False"
+                              Panel.ZIndex="12"
+                              Cursor="Hand"
+                              Click="EquipmentTrigger_Click"
+                              HorizontalAlignment="Left"
+                              Background="Transparent"
+                              Style="{StaticResource StyleToggleButtonAirValve}"
+                              RenderTransformOrigin="0.5,0.5" Margin="-171,434,0,440">
+                    <ToggleButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="90"/>
+                            <TranslateTransform X="660" Y="281"/>
+                        </TransformGroup>
+                    </ToggleButton.RenderTransform>
+                </ToggleButton>
+
+                <ToggleButton Name="AV1_25"
+                              IsEnabled="False"
+                              Panel.ZIndex="12"
+                              Cursor="Hand"
+                              Click="EquipmentTrigger_Click"
+                              HorizontalAlignment="Left"
+                              Background="Transparent"
+                              Style="{StaticResource StyleToggleButtonAirValve}"
+                              RenderTransformOrigin="0.5,0.5" Margin="-334,430,0,444">
+                    <ToggleButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="90"/>
+                            <TranslateTransform X="680" Y="281"/>
+                        </TransformGroup>
+                    </ToggleButton.RenderTransform>
+                </ToggleButton>
+
+                <ToggleButton Name="AV1_26"
+                              IsEnabled="False"
+                              Panel.ZIndex="12"
+                              Cursor="Hand"
+                              Click="EquipmentTrigger_Click"
+                              HorizontalAlignment="Left"
+                              Background="Transparent"
+                              Style="{StaticResource StyleToggleButtonAirValve}"
+                              RenderTransformOrigin="0.5,0.5" Margin="-628,361,0,513">
+                    <ToggleButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="90"/>
+                            <TranslateTransform X="700" Y="281"/>
+                        </TransformGroup>
+                    </ToggleButton.RenderTransform>
+                </ToggleButton>
+
+                <TextBlock Name="LBLAV119" 
+                           Text="AV1-19"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="484,-131,287,1019">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="300" X="176"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="LBLAV122" 
+                           Text="AV1-22"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="82,397,691,491">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="300" X="190"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="LBLAV123" 
+                           Text="AV1-23"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="126,64,647,824">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="300" X="200"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="LBLAV124" 
+                           Text="AV1-24"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="304,424,468,464">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="300" X="220"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="LBLAV125" 
+                           Text="AV1-25"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="75,422,698,466">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="300" X="240"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <TextBlock Name="LBLAV126" 
+                           Text="AV1-26"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="-226,353,999,535">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="300" X="260"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+                <!-- New Added -->
+
+            </Grid>
+        </Viewbox>
+        <ScrollViewer Template="{DynamicResource StandardScrollViewer}" Grid.Column="1"
+                      VerticalScrollBarVisibility="Auto" Margin="20,65,20,0">
+            <StackPanel Name="CardCollection" VerticalAlignment="Top">
+                <usercontrols:Card Equipment="DISTILLATION TANK" Description="Recipe will proceed without distillation tank reaching the setpoint temperature."/>
+                <usercontrols:Card Equipment="CHILLER" Description="Internal chiller will be on without considering external chiller temperature."/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

@@ -1,0 +1,35 @@
+﻿<Page x:Class="CLEANXCEL2._2.Pages.Menu.Maintenance.Sensor"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CLEANXCEL2._2.Pages.Menu.Maintenance"
+      xmlns:usercontrols="clr-namespace:CLEANXCEL2._2.UserControls"
+      mc:Ignorable="d" 
+      Loaded="Page_Loaded"
+      Unloaded="Page_Unloaded"
+      d:DesignHeight="1300" d:DesignWidth="1800"
+      Title="Sensor">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0">
+            <usercontrols:DigitalDisplay x:Name="DigitalDisplay1"/>
+            <usercontrols:DigitalDisplay x:Name="DigitalDisplay3"/>
+            <usercontrols:DigitalDisplay x:Name="DigitalDisplay5"/>
+            <usercontrols:DigitalDisplay x:Name="DigitalDisplay7"/>
+            <usercontrols:DigitalDisplay x:Name="DigitalDisplay9"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Loaded="StackPanel_Loaded">
+            <usercontrols:DigitalDisplay x:Name="DigitalDisplay2"/>
+            <usercontrols:DigitalDisplay x:Name="DigitalDisplay4"/>
+            <usercontrols:DigitalDisplay x:Name="DigitalDisplay6"/>
+            <usercontrols:DigitalDisplay x:Name="DigitalDisplay8"/>
+        </StackPanel>
+    </Grid>
+</Page>
