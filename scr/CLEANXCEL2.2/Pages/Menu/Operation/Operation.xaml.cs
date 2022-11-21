@@ -155,7 +155,7 @@ namespace CLEANXCEL2._2.Pages.Menu.Operation
             {
                 int TotalRecipeTime = Convert.ToInt32((Functions.SQL.Query.ExecuteSingleQuery(
                     "select sum(recipe.process_time) as total_time from recipe right join " +
-                    "recipe_id on recipe_id.id = recipe.recipe_name where recipe_id.id = '" + recipes[0][i] + "'", "total_time"))[0]);
+                    "recipe_id on recipe_id.id = recipe.recipe_name where recipe_id.id  = '" + recipes[0][i] + "'", "total_time"))[0]);
                 RadioButton radioButton = new RadioButton()
                 {
                     Name = "RECIPES" + recipes[0][i],

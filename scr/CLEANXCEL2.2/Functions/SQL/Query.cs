@@ -13,7 +13,9 @@ namespace CLEANXCEL2._2.Functions.SQL
         private static string database = "fe01fs";
         private static string uid = "root";
         private static string password = "abcd1234";
-        private static string connString = "server=" + server+ ";database=" + database + ";uid=" + uid + ";password=" + password + ";SSL Mode=none;";
+        //private static string connString = "server=" + server+ ";database=" + database + ";username=" + uid + ";password=" + password + ";";
+        private static string connString = "Server=localhost;port=3307;Database=fe01fs;Uid=root;";
+
 
         public static bool ExecuteNonQuery(string query, MySqlCommand mySqlCommand)
         {
@@ -133,7 +135,7 @@ namespace CLEANXCEL2._2.Functions.SQL
 
                 return list;
             }
-            catch { return list; }
+            catch(Exception ex) { return list; }
         }
 
         public static List<List<string>> ExecuteMultiQuery(string query, string[] return_value)

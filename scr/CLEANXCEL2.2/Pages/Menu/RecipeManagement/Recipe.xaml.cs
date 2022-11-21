@@ -75,7 +75,7 @@ namespace CLEANXCEL2._2.Pages.Menu.RecipeManagement
         private int ProcessTime(string title)
         {
             List<int> list = new List<int>();
-            foreach (string processconditions in Functions.SQL.Query.ExecuteSingleQuery("select process.conditions from process right join process_id on process_id.id = process.process_name where process_id.name='" + title + "'", "conditions"))
+            foreach (string processconditions in Functions.SQL.Query.ExecuteSingleQuery("select process.conditions from process right join process_id on process_id.id = process.process_name where process_id.status = 1 and process_id.name='" + title + "'", "conditions"))
             {
                 list.AddRange(processconditions.Split(':', '~').Select(x => Convert.ToInt32(x)));
             }
