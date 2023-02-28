@@ -263,7 +263,12 @@ namespace CLEANXCEL2._2.Pages.Menu.RecipeManagement
         {
             MySqlCommand mySqlCommand = new MySqlCommand();
 
-            Functions.RecipeManagement.BlackBox.RecipeModule.UploadSQLSubProcessId(CBSubProcessName.Text.ToString());
+            bool result = Functions.RecipeManagement.BlackBox.RecipeModule.UploadSQLSubProcessId(CBSubProcessName.Text.ToString());
+            if(!result)
+            {
+                Globals.POPUP_REQUEST("50", "Error Upload Sub Process.", Window.WindowsMessageBox.State.Error);
+                return;
+            }
             foreach (Conditions equipment in equipmentCondition)
             {
                 if (!equipment.conditionPanel.Encode(equipment.variable_name).StartConditions.Any() && !equipment.conditionPanel.Encode(equipment.variable_name).StopConditions.Any())

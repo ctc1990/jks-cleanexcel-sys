@@ -259,7 +259,7 @@ namespace CLEANXCEL2._2.Pages.Menu.Operation
             if (Globals.CONNECTION)
             {
                 bool argument = Convert.ToBoolean(e.Argument);
-                
+                string errorMessage = "";
                 try
                 {
                     Globals.InitiatingRecipe = true;
@@ -269,7 +269,14 @@ namespace CLEANXCEL2._2.Pages.Menu.Operation
                         string recipe = Globals.currentRecipe.Replace('_', ' ');
                         Functions.RecipeManagement.RecipeStructure.StatusManagement.POST_History_Recipe();
                         Functions.RecipeManagement.RecipeStructure.StandardCommand.EmptyRecipe(adsClient);
-                        Functions.RecipeManagement.BlackBox.RecipeModule.UploadRecipe(adsClient, recipe, TotalProcessTime);
+                        Functions.RecipeManagement.BlackBox.RecipeModule.UploadRecipe(adsClient, recipe, TotalProcessTime, out errorMessage);
+
+                        if(!string.IsNullOrEmpty(errorMessage))
+                        {
+                            Functions.RecipeManagement.RecipeStructure.StandardCommand.StopProcess(adsClient);
+                            Globals.POPUP_REQUEST("50", errorMessage, Window.WindowsMessageBox.State.Error);
+                        }
+
                         Functions.RecipeManagement.RecipeStructure.StandardCommand.StartRecipeNumber(adsClient, 1);
                     }
                     else

@@ -1252,9 +1252,9 @@
                 </TextBlock>
 
                 <!-- New Added -->
-                <TextBlock x:Name="ProcessName" Style="{StaticResource H1}" Text="{Binding Text, ElementName=txtBox1, UpdateSourceTrigger=PropertyChanged}" 
+                <!--<TextBlock x:Name="ProcessName" Style="{StaticResource H1}" Text="{Binding Text, ElementName=txtBox1, UpdateSourceTrigger=PropertyChanged}" 
                                HorizontalAlignment="Center" Margin="155,43,138,1133" TextWrapping="WrapWithOverflow"
-                               TextAlignment="Center" Width="515"/>
+                               TextAlignment="Center" Width="515"/>-->
             </Grid>
         </Viewbox>
 

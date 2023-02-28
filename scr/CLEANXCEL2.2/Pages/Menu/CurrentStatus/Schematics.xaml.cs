@@ -80,8 +80,14 @@ namespace CLEANXCEL2._2.Pages.Menu.CurrentStatus
 
         private void StatusOnChange(object sender, AdsNotificationEventArgs e)
         {
-            
-                      
+            #region show process name
+            //if (e.NotificationHandle == hconnect[1])
+            //{
+            //    string value = binReadProcessname.ReadPlcAnsiString(99);
+            //    //ProcessName.Text = string.Format(value);
+            //}
+            #endregion
+
             for (int i = 0; i < mapping.Count(); i++)
             {
                 if (e.NotificationHandle == hconnect[i])
@@ -154,11 +160,11 @@ namespace CLEANXCEL2._2.Pages.Menu.CurrentStatus
                 new Mapping { button = AV1_10, input = ".Y101_09", output = ".WY10109_15" },
                 new Mapping { button = AV1_11, input = ".Y101_10", output = ".WY10110_15" },
                 new Mapping { button = AV1_12, input = ".Y101_11", output = ".WY10111_15" },
-                new Mapping { button = AV1_13, input = ".Y101_12", output = ".WY10112_15" },
-                //new Mapping { button = AV1_14, input = ".Y101_13", output = ".WY10113_15" },
+                //new Mapping { button = AV1_13, input = ".Y101_12", output = ".WY10112_15" },
+                ////new Mapping { button = AV1_14, input = ".Y101_13", output = ".WY10113_15" },
                 new Mapping { button = AV1_15, input = ".Y101_14", output = ".WY10114_15" },
-                new Mapping { button = AV1_16, input = ".Y101_15", output = ".WY10115_15" },
-                new Mapping { button = AV1_17, input = ".Y102_00", output = ".WY10200_15" },
+                //new Mapping { button = AV1_16, input = ".Y101_15", output = ".WY10115_15" },
+                //new Mapping { button = AV1_17, input = ".Y102_00", output = ".WY10200_15" },
                 new Mapping { button = P1, input = ".Y100_10", output = ".WY10010_15" },
                 new Mapping { button = US, input = ".Y100_08", output = ".WY10008_15" },
                 new Mapping { button = H1, input = ".Y100_11", output = ".WY10011_15" },
@@ -177,7 +183,7 @@ namespace CLEANXCEL2._2.Pages.Menu.CurrentStatus
                 new Mapping { button = Lamp, input = ".Y102_13", output = ".WY10213_15" },
 
                 #region valve added
-                new Mapping { button = AV1_19, input = ".Y103_00", output = ".WY10300_15" },
+                //new Mapping { button = AV1_19, input = ".Y103_00", output = ".WY10300_15" },
                 new Mapping { button = AV1_22, input = ".Y103_01", output = ".WY10301_15" },
                 new Mapping { button = AV1_23, input = ".Y103_02", output = ".WY10302_15" },
                 new Mapping { button = AV1_24, input = ".Y103_03", output = ".WY10303_15" },

@@ -154,7 +154,8 @@ namespace CLEANXCEL2._2.Pages.Window
         public enum State
         {
             Confirmation,
-            Ok
+            Ok,
+            Error
         }
     }
 }

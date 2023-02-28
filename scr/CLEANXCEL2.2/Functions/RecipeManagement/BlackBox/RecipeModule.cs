@@ -6,6 +6,7 @@ using TwinCAT.Ads;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using CLEANXCEL2._2.UserControls;
 
 namespace CLEANXCEL2._2.Functions.RecipeManagement.BlackBox
 {
@@ -86,7 +87,7 @@ namespace CLEANXCEL2._2.Functions.RecipeManagement.BlackBox
         }
 
         public static bool UploadSQLRecipeId(string RecipeName)
-        {
+        {            
             try
             {
                 MySqlCommand mySqlCommand = new MySqlCommand();
@@ -123,141 +124,185 @@ namespace CLEANXCEL2._2.Functions.RecipeManagement.BlackBox
             }
         }
 
-        public static void UploadRecipe(TcAdsClient adsClient, string recipe_name, int totaltime)
-        {
-            List<ProcessFlow> list = UploadSSUR(adsClient, recipe_name);
+        public static void UploadRecipe(TcAdsClient adsClient, string recipe_name, int totaltime,out string errorMessage)
+        {    
+            List<ProcessFlow> list = UploadSSUR(adsClient, recipe_name,out errorMessage);
+
+            if(!string.IsNullOrEmpty(errorMessage))
+            {              
+                return;
+            }
             
-            UploadSSER(adsClient, recipe_name, totaltime, list);
+            UploadSSER(adsClient, recipe_name, totaltime, list,out errorMessage);
+
+            if (!string.IsNullOrEmpty(errorMessage))
+            {
+                return;
+            }
         }
 
-        private static List<ProcessFlow> UploadSSUR(TcAdsClient adsClient, string recipe_name)
+        private static List<ProcessFlow> UploadSSUR(TcAdsClient adsClient, string recipe_name,out string errorMessage)
         {
-            int k = 0;
-            int count = 1;
-            int temp_start;
             List<ProcessFlow> process_Run = new List<ProcessFlow>();
-            List<Functions.RecipeManagement.BlackBox.ProcessExtraction.SubProcess> subProcessList = new List<Functions.RecipeManagement.BlackBox.ProcessExtraction.SubProcess>();
-
-            List<List<string>> process = Functions.SQL.Query.ExecuteMultiQuery(
-                "select recipe_id.name, recipe.process_name, recipe.parameters from recipe right join recipe_id on " +
-                "recipe_id.id = recipe.recipe_name where recipe_id.id = '" + recipe_name + "' and recipe_id.status = '1'",
-                new string[] { "name", "process_name", "parameters" });
-
-            // Set of SSUR
-            
-            for (int a = 0; a < process[1].Count(); a++)
+            try
             {
-                //Edit on 2020/06/05 - recipe not running in surface pro
-                string[] parameters1 = process[2][a].Split(new char[] { '=', '~' });
+                errorMessage = "";
+                int k = 0;
+                int count = 1;
+                int temp_start;              
+                List<Functions.RecipeManagement.BlackBox.ProcessExtraction.SubProcess> subProcessList = new List<Functions.RecipeManagement.BlackBox.ProcessExtraction.SubProcess>();
 
-                string[] parameters = parameters1.Where(val => val != "").ToArray();
+                List<List<string>> process = Functions.SQL.Query.ExecuteMultiQuery(
+                    "select recipe_id.name, recipe.process_name, recipe.parameters from recipe right join recipe_id on " +
+                    "recipe_id.id = recipe.recipe_name where recipe_id.id = '" + recipe_name + "' and recipe_id.status = '1'",
+                    new string[] { "name", "process_name", "parameters" });
 
-                // Time Cutting
-                subProcessList = new List<Functions.RecipeManagement.BlackBox.ProcessExtraction.SubProcess>();
-                foreach (string subprocess in Functions.SQL.Query.ExecuteSingleQuery(
-                    "select process.id from process right join process_id on process_id.id = process.process_name where process_id.id = '" + process[1][a] + "' and process_id.status = '1'", "id"))
+                // Set of SSUR
+
+                if(process.Count > 0)
                 {
-                    k = 0;
-                    string[] conditions = Functions.SQL.Query.ExecuteSingleQuery("select process.conditions from process where process.id = '" + subprocess + "'", "conditions").First().Split('~');
-                    List<List<string>> equipment = Functions.SQL.Query.ExecuteMultiQuery(
-                        "select sub_process.id, sub_process.equipment_state, sub_process_id.name from sub_process " +
-                        "right join sub_process_id on sub_process_id.id = sub_process.sub_process_name where sub_process_id.id = " +
-                        "(select process.sub_process_name from process where process.id = '" + subprocess + "') and sub_process_id.status = '1'",
-                        new string[] { "id", "equipment_state", "name" });
-
-                    for (int i = 0; i < equipment[0].Count(); i++)
+                    for (int a = 0; a < process[1].Count(); a++)
                     {
-                        string[] time = conditions[k].Split(':');
-                        if (i < equipment[0].Count() - 1)
+                        //Edit on 2020/06/05 - recipe not running in surface pro
+                        string[] parameters1 = process[2][a].Split(new char[] { '=', '~' });
+
+                        string[] parameters = parameters1.Where(val => val != "").ToArray();
+
+                        // Time Cutting
+                        subProcessList = new List<Functions.RecipeManagement.BlackBox.ProcessExtraction.SubProcess>();
+                        foreach (string subprocess in Functions.SQL.Query.ExecuteSingleQuery(
+                            "select process.id from process right join process_id on process_id.id = process.process_name where process_id.id = '" + process[1][a] + "' and process_id.status = '1'", "id"))
                         {
-                            if (equipment[1][i] != equipment[1][i + 1])
-                                k++;
-                        }
-                        int StartTime = Convert.ToInt32(time[0]);
-                        int StopTime = Convert.ToInt32(time[1]);
-                        subProcessList.Add(Functions.RecipeManagement.BlackBox.ProcessExtraction.ExecuteProcessExtraction(equipment[0][i], StartTime, StopTime, equipment[2][i]));
-                    }
+                            k = 0;
+                            string[] conditions = Functions.SQL.Query.ExecuteSingleQuery("select process.conditions from process where process.id = '" + subprocess + "'", "conditions").First().Split('~');
+                            List<List<string>> equipment = Functions.SQL.Query.ExecuteMultiQuery(
+                                "select sub_process.id, sub_process.equipment_state, sub_process_id.name from sub_process " +
+                                "right join sub_process_id on sub_process_id.id = sub_process.sub_process_name where sub_process_id.id = " +
+                                "(select process.sub_process_name from process where process.id = '" + subprocess + "') and sub_process_id.status = '1'",
+                                new string[] { "id", "equipment_state", "name" });
 
-                }
-                List<List<string>> timeExtract = Functions.RecipeManagement.BlackBox.TimeManagement.ExecuteTimeCutter(subProcessList);
-
-                // Writing SSUR
-                temp_start = count;
-                for (int i = 0; i < timeExtract[0].Count; i++)
-                {
-                    Functions.RecipeManagement.RecipeStructure.StandardCommand.SaveRecipe(adsClient, false);
-                    Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, ".AR10DSStationSSURStore[1].iSubRecipeNo", (count++).ToString(), "int");
-                    Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, ".AR10DSStationSSURStore[1].sSubRecipeDescription", process[0][a] + "\n" + timeExtract[1][i], "string");
-                    
-                    //Edit on 2020/05/29 - recipe not running in surface pro
-                    string[] subprocess1 = timeExtract[0][i].Split('~', '=');
-
-                    string[] subprocess = subprocess1.Where(val => val != "").ToArray();
-                    for (int j = 0; j < subprocess.Count(); j += 2)
-                    {
-                        if(!string.IsNullOrEmpty(subprocess[j]))
-                        {
-                            if(!string.IsNullOrEmpty(subprocess[j]))
+                            for (int i = 0; i < equipment[0].Count(); i++)
                             {
-                                Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, DSSubProcess + subprocess[j], subprocess[j + 1], datatype(subprocess[j]));
-                            }                          
-                        }               
-                    }
-                    for (int j = 0; j < parameters.Count(); j += 2)
-                    {
-                        if (!string.IsNullOrEmpty(parameters[j]))
-                        {
-                            Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, DSSubProcess + parameters[j], parameters[j + 1], datatype(parameters[0]));
-                        }
-                    }
-                    Functions.RecipeManagement.RecipeStructure.StandardCommand.SaveRecipe(adsClient, true);
-                }
-                //hashtable.Add(process[0][a], new ProcessFlow() { start = temp_start, stop = count - 1 }); //temporary unuse
-                process_Run.Add(new ProcessFlow() { start = temp_start, stop = count - 1 });
-            }
+                                string[] time = conditions[k].Split(':');
+                                if (i < equipment[0].Count() - 1)
+                                {
+                                    if (equipment[1][i] != equipment[1][i + 1])
+                                        k++;
+                                }
+                                int StartTime = Convert.ToInt32(time[0]);
+                                int StopTime = Convert.ToInt32(time[1]);
+                                subProcessList.Add(Functions.RecipeManagement.BlackBox.ProcessExtraction.ExecuteProcessExtraction(equipment[0][i], StartTime, StopTime, equipment[2][i]));
+                            }
 
-            return process_Run;
+                        }
+                        List<List<string>> timeExtract = Functions.RecipeManagement.BlackBox.TimeManagement.ExecuteTimeCutter(subProcessList);
+
+                        // Writing SSUR
+                        temp_start = count;
+                        for (int i = 0; i < timeExtract[0].Count; i++)
+                        {
+                            Functions.RecipeManagement.RecipeStructure.StandardCommand.SaveRecipe(adsClient, false);
+                            Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, ".AR10DSStationSSURStore[1].iSubRecipeNo", (count++).ToString(), "int");
+                            Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, ".AR10DSStationSSURStore[1].sSubRecipeDescription", process[0][a] + "\n" + timeExtract[1][i], "string");
+
+                            //Edit on 2020/05/29 - recipe not running in surface pro
+                            string[] subprocess1 = timeExtract[0][i].Split('~', '=');
+
+                            string[] subprocess = subprocess1.Where(val => val != "").ToArray();
+                            for (int j = 0; j < subprocess.Count(); j += 2)
+                            {
+                                if (!string.IsNullOrEmpty(subprocess[j]))
+                                {
+                                    if (!string.IsNullOrEmpty(subprocess[j]))
+                                    {
+                                        Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, DSSubProcess + subprocess[j], subprocess[j + 1], datatype(subprocess[j]));
+                                    }
+                                }
+                            }
+                            for (int j = 0; j < parameters.Count(); j += 2)
+                            {
+                                if (!string.IsNullOrEmpty(parameters[j]))
+                                {
+                                    Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, DSSubProcess + parameters[j], parameters[j + 1], datatype(parameters[0]));
+                                }
+                            }
+                            Functions.RecipeManagement.RecipeStructure.StandardCommand.SaveRecipe(adsClient, true);
+                        }
+                        //hashtable.Add(process[0][a], new ProcessFlow() { start = temp_start, stop = count - 1 }); //temporary unuse
+                        process_Run.Add(new ProcessFlow() { start = temp_start, stop = count - 1 });
+                    }
+
+                    return process_Run;
+                }
+                else
+                {
+                    errorMessage = "No Process Found.";
+                    return process_Run;
+                }
+            }
+            catch(Exception ex)
+            {
+                errorMessage = ex.Message;
+                return process_Run;
+            }
         }
 
-        private static void UploadSSER(TcAdsClient adsClient, string recipe_name, int totaltime, List<ProcessFlow> process_Run)
+        private static void UploadSSER(TcAdsClient adsClient, string recipe_name, int totaltime, List<ProcessFlow> process_Run,out string errorMessage)
         {
-            int k = 0;
-            // Set of SSER
-            List<List<string>> recipe = Functions.SQL.Query.ExecuteMultiQuery(
-                "select recipe.cycle, recipe.repeat_number from recipe " +
-                "right join recipe_id on recipe_id.id = recipe.recipe_name where recipe_id.id = '" + recipe_name + "' and recipe_id.status = '1'",
-                new string[] { "cycle", "repeat_number" });
-            List<int> process_start = new List<int>();
-            k = 1;
-
-            // Writing SSER
-            Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, ".AR10DSStationSSERStore[1].iStationSequenceRecipeNo", "1", "int");
-            for (int i = 0; i < recipe[0].Count(); i++)
+            try
             {
-                ProcessFlow processFlow = process_Run[i];
-                //ProcessFlow processFlow = (ProcessFlow)hashtable[recipe[0][i]];
-                process_start.Add(k);
-                for (int j = processFlow.start; j <= processFlow.stop; j++)
+                errorMessage = "";
+                int k = 0;
+                // Set of SSER
+                List<List<string>> recipe = Functions.SQL.Query.ExecuteMultiQuery(
+                    "select recipe.cycle, recipe.repeat_number from recipe " +
+                    "right join recipe_id on recipe_id.id = recipe.recipe_name where recipe_id.id = '" + recipe_name + "' and recipe_id.status = '1'",
+                    new string[] { "cycle", "repeat_number" });
+                List<int> process_start = new List<int>();
+                k = 1;
+
+                // Writing SSER
+
+                if(recipe.Count > 0)
                 {
-                    Functions.RecipeManagement.RecipeStructure.StandardCommand.SaveRecipe(adsClient, false);
-                    if (j == processFlow.stop)
+                    Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, ".AR10DSStationSSERStore[1].iStationSequenceRecipeNo", "1", "int");
+                    for (int i = 0; i < recipe[0].Count(); i++)
                     {
-                        Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, DSProcess + "AR10iCycle[" + k + "]", recipe[0][i].ToString(), "int");
-                        Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, DSProcess + "AR10iRepeatFromStepNo[" + k + "]"
-                            , process_start[Convert.ToInt32(recipe[1][i]) - 1].ToString(), "int");
+                        ProcessFlow processFlow = process_Run[i];
+                        //ProcessFlow processFlow = (ProcessFlow)hashtable[recipe[0][i]];
+                        process_start.Add(k);
+                        for (int j = processFlow.start; j <= processFlow.stop; j++)
+                        {
+                            Functions.RecipeManagement.RecipeStructure.StandardCommand.SaveRecipe(adsClient, false);
+                            if (j == processFlow.stop)
+                            {
+                                Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, DSProcess + "AR10iCycle[" + k + "]", recipe[0][i].ToString(), "int");
+                                Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, DSProcess + "AR10iRepeatFromStepNo[" + k + "]"
+                                    , process_start[Convert.ToInt32(recipe[1][i]) - 1].ToString(), "int");
+                            }
+                            else
+                            {
+                                Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, DSProcess + "AR10iCycle[" + k + "]", "1", "int");
+                                Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, DSProcess + "AR10iRepeatFromStepNo[" + k + "]", "1", "int");
+                            }
+                            Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, DSProcess + "AR10iStationSubProNo[" + (k++) + "]", j.ToString(), "int");
+                            Functions.RecipeManagement.RecipeStructure.StandardCommand.SaveRecipe(adsClient, true);
+                        }
                     }
-                    else
-                    {
-                        Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, DSProcess + "AR10iCycle[" + k + "]", "1", "int");
-                        Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, DSProcess + "AR10iRepeatFromStepNo[" + k + "]", "1", "int");
-                    }
-                    Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, DSProcess + "AR10iStationSubProNo[" + (k++) + "]", j.ToString(), "int");
-                    Functions.RecipeManagement.RecipeStructure.StandardCommand.SaveRecipe(adsClient, true);
+                    Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, DSProcess + "iProcessMinTime", totaltime.ToString(), "int");
+                    Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, DSProcess + "iProcessMaxTime", totaltime.ToString(), "int");
+                    Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, DSProcess + "iProcessCalculatedTime", totaltime.ToString(), "int");
+                }
+                else
+                {
+                    errorMessage = "No Recipe Found.";
                 }
             }
-            Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, DSProcess + "iProcessMinTime", totaltime.ToString(), "int");
-            Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, DSProcess + "iProcessMaxTime", totaltime.ToString(), "int");
-            Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, DSProcess + "iProcessCalculatedTime", totaltime.ToString(), "int");
+            catch(Exception ex)
+            {
+                errorMessage = ex.Message;
+            }
+            
         }
 
         private static string datatype(string variable_name)

@@ -160,8 +160,15 @@ namespace CLEANXCEL2._2.Pages.Menu.RecipeManagement
         }
 
         private void UploadSubProcess()
-        {
-            Functions.RecipeManagement.BlackBox.RecipeModule.UploadSQLProcessId(CBProcessName.Text.ToString());
+        {            
+            bool result = Functions.RecipeManagement.BlackBox.RecipeModule.UploadSQLProcessId(CBProcessName.Text.ToString());
+
+            if(!result)
+            {
+                Globals.POPUP_REQUEST("50", "Error Upload Sub Process.", Window.WindowsMessageBox.State.Error);
+                return;
+            }
+
             foreach (UIElement children in SubProcessDuration.Children)
             {
                 try

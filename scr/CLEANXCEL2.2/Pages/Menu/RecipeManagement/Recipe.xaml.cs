@@ -161,8 +161,14 @@ namespace CLEANXCEL2._2.Pages.Menu.RecipeManagement
 
         public void UploadProcess()
         {
-            Functions.RecipeManagement.BlackBox.RecipeModule.UploadSQLRecipeId(CBRecipeName.Text.ToString());
+            
+            bool result = Functions.RecipeManagement.BlackBox.RecipeModule.UploadSQLRecipeId(CBRecipeName.Text.ToString());
 
+            if(!result)
+            {
+                Globals.POPUP_REQUEST("50", "Error Upload Process.", Window.WindowsMessageBox.State.Error);
+                return;
+            }
             //bool haveUS = FilterUSInRecipe(CBRecipeName.SelectedItem.ToString());
 
             foreach (UIElement children in ProcessDuration.Children)
