@@ -142,7 +142,7 @@ namespace CLEANXCEL2._2.Pages.Menu
                     page = "../Pages/User/Index.xaml";
                     break;
             }
-            Console.WriteLine("Pass");
+            //Console.WriteLine("Pass");
 
             switch (radioButton.Name)
             {
@@ -270,7 +270,7 @@ namespace CLEANXCEL2._2.Pages.Menu
 
         private void AlarmNotification_ActionChange()
         {
-            Console.WriteLine("Alarm Started");
+            //Console.WriteLine("Alarm Started");
             int count = Convert.ToInt32(Functions.SQL.Query.ExecuteSingleQuery("select count(status) as count from alarm_history where status = '1'", "count")[0]);
             switch (count)
             {
@@ -310,14 +310,14 @@ namespace CLEANXCEL2._2.Pages.Menu
 
         private void IntervalLogging_Tick(object sender, EventArgs e)
         {
-            Functions.RecipeManagement.RecipeStructure.StatusManagement.POST_History_Status(adsClient);
+            //Functions.RecipeManagement.RecipeStructure.StatusManagement.POST_History_Status(adsClient);
         }
 
         public void StopIntervalLogging()
         {
             IntervalLogging.Stop();
 
-            Functions.RecipeManagement.RecipeStructure.StatusManagement.POST_History_Status_Ended(adsClient);
+            //Functions.RecipeManagement.RecipeStructure.StatusManagement.POST_History_Status_Ended(adsClient);
 
             Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, ".bAutoStartPB", "false", "bool");
             Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, ".bBasketCfmEn", "false", "bool");

@@ -44,12 +44,14 @@ namespace CLEANXCEL2._2.UserControls
 
         public void Query()
         {
+            //string MyConString = "Server=localhost;port=3307;Database=fe01fs;Uid=root;";
+
             string MyConString =
-                   "SERVER=localhost;" +                
-                   "DATABASE=fe01fs;" +
-                   "UID=root;" +
-                   "PASSWORD=abcd1234;" +
-                   "SSLMode=none;";
+                       "SERVER=localhost;" +
+                       "DATABASE=fe01fs;" +
+                       "UID=root;" +
+                       "PASSWORD=abcd1234;" +
+                       "SSLMode=none;";
             if (CallAlarmCodeDesc(AlarmCode, MyConString))
             {
                 CallAlarmInfo(AlarmCode, MyConString);

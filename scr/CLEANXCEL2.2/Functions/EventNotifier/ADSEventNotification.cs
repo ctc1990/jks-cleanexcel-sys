@@ -41,7 +41,7 @@ namespace CLEANXCEL2._2.Functions.EventNotifier
             }
             catch (Exception err)
             {
-                Console.WriteLine(err.Message.ToString());
+                ////Console.WriteLine(err.Message.ToString());
             }
         }        
 
@@ -61,7 +61,7 @@ namespace CLEANXCEL2._2.Functions.EventNotifier
             }
             catch
             {
-                Console.WriteLine("ADSEventNotification Failed to Read");
+                ////Console.WriteLine("ADSEventNotification Failed to Read");
             }
         }
 

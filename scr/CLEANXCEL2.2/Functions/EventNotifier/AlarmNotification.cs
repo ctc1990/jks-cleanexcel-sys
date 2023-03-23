@@ -36,7 +36,7 @@ namespace CLEANXCEL2._2.Functions.EventNotifier
                 {
                     hconnect[i - 1] = adsClient.AddDeviceNotification(variableName + "[" + index[i] + "]", adsDataStream, start_ind, size, AdsTransMode.OnChange, 100, 0, null);
                     start_ind += size;
-                    Console.WriteLine(variableName + "[" + i + "] : " + hconnect[i - 1]);
+                    ////Console.WriteLine(variableName + "[" + i + "] : " + hconnect[i - 1]);
                 }
 
                 adsClient.AdsNotification += new AdsNotificationEventHandler(AlarmOnchange);
@@ -49,7 +49,7 @@ namespace CLEANXCEL2._2.Functions.EventNotifier
 
         private void AlarmOnchange(object sender, AdsNotificationEventArgs e)
         {
-            Console.WriteLine(e.NotificationHandle);
+            ////Console.WriteLine(e.NotificationHandle);
             string dateTime;
             string[] alarm;
             try

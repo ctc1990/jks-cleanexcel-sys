@@ -18,7 +18,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <Border Background="Transparent" Margin="-10,0,10,0"/>
+        
 
         <Viewbox Grid.Column="0" Stretch="Uniform" Margin="0,-40" Loaded="Viewbox_Loaded">
             <Grid x:Name="SchematicDiagram" HorizontalAlignment="Center" Margin="0"
@@ -65,43 +65,6 @@
                             <SkewTransform/>
                             <RotateTransform/>
                             <TranslateTransform X="361" Y="-238"/>
-                        </TransformGroup>
-                    </ToggleButton.RenderTransform>
-                </ToggleButton>
-
-                <ToggleButton x:Name="H1"
-                              IsEnabled="False"
-                              Panel.ZIndex="12"
-                              Cursor="Hand"
-                              Height="50"
-                              HorizontalAlignment="Left"
-                              Background="Transparent"
-                              Style="{StaticResource StyleToggleButtonHeater}" RenderTransformOrigin="0.5,0.5" Margin="-68,379,0,475">
-                    <ToggleButton.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform/>
-                            <SkewTransform/>
-                            <RotateTransform/>
-                            <TranslateTransform X="510" Y="200"/>
-                        </TransformGroup>
-                    </ToggleButton.RenderTransform>
-                </ToggleButton>
-
-                <ToggleButton x:Name="H2"
-                              IsEnabled="False"
-                              Panel.ZIndex="12"
-                              Cursor="Hand"
-                              Height="50"
-                              HorizontalAlignment="Left"
-                              Background="Transparent"
-                              Style="{StaticResource StyleToggleButtonHeater}" RenderTransformOrigin="0.5,0.5" Margin="-37,379,0,475"
-                              >
-                    <ToggleButton.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform/>
-                            <SkewTransform/>
-                            <RotateTransform/>
-                            <TranslateTransform X="393" Y="200"/>
                         </TransformGroup>
                     </ToggleButton.RenderTransform>
                 </ToggleButton>
@@ -543,7 +506,7 @@
                            Panel.ZIndex="14"
                            TextAlignment="Center"
                            Width="Auto"
-                           Style="{StaticResource SchName}" RenderTransformOrigin="0.5,0.5" Margin="304,506,442,585">
+                           Style="{StaticResource SchName}" RenderTransformOrigin="0.5,0.5" Margin="304,663,442,680">
                     <TextBlock.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -559,7 +522,7 @@
                            Panel.ZIndex="14"
                            Width="Auto"
                            TextAlignment="Center"
-                           Style="{StaticResource SchName}" RenderTransformOrigin="0.5,0.5" Margin="333,507,416,584">
+                           Style="{StaticResource SchName}" RenderTransformOrigin="0.5,0.5" Margin="333,663,416,680">
                     <TextBlock.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -1016,34 +979,6 @@
                     </TextBlock.RenderTransform>
                 </TextBlock>
 
-                <TextBlock x:Name="LBLH1" 
-                           Text="H1"
-                           Panel.ZIndex="14"
-                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="317,396,456,492">
-                    <TextBlock.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform/>
-                            <SkewTransform/>
-                            <RotateTransform/>
-                            <TranslateTransform Y="240" X="141"/>
-                        </TransformGroup>
-                    </TextBlock.RenderTransform>
-                </TextBlock>
-
-                <TextBlock x:Name="LBLH2" 
-                           Text="H2"
-                           Panel.ZIndex="14"
-                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="349,396,424,492">
-                    <TextBlock.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform/>
-                            <SkewTransform/>
-                            <RotateTransform/>
-                            <TranslateTransform Y="240" X="24"/>
-                        </TransformGroup>
-                    </TextBlock.RenderTransform>
-                </TextBlock>
-
                 <TextBlock x:Name="LBLH3" 
                            Text="H3"
                            Panel.ZIndex="14"
@@ -1273,5 +1208,6 @@
                 <Frame x:Name="FrameSensor" Loaded="Frame_Loaded"/>
             </Border>
         </ScrollViewer>
+        <Border Background="Transparent" Margin="-10,0,10,0"/>
     </Grid>
 </Page>

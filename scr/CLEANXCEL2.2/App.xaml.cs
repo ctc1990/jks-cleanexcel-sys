@@ -53,11 +53,11 @@ namespace CLEANXCEL2._2
             if (PAGE_URL != null)
             {
                 CLEANXCEL2._2.MainWindow.AppWindow.FrameContainer.Source = new Uri(PAGE_URL, UriKind.RelativeOrAbsolute);
-                Console.WriteLine("PAGE_REQUEST : Completed.");
+                ////Console.WriteLine("PAGE_REQUEST : Completed.");
             }
             else
             {
-                Console.WriteLine("PAGE_REQUEST : PAGE_URL is not defined.");
+                //Console.WriteLine("PAGE_REQUEST : PAGE_URL is not defined.");
             }
         }
 
@@ -68,11 +68,11 @@ namespace CLEANXCEL2._2
                 CLEANXCEL2._2.Pages.Menu.Index.AppWindow.FrameContainer.Source = new Uri(MENU_URL, UriKind.RelativeOrAbsolute);
                 Storyboard SB = (Storyboard)CLEANXCEL2._2.Pages.Menu.Index.AppWindow.FindResource("ShowFrame");
                 SB.Begin();
-                Console.WriteLine("MENU_REQUEST : Completed.");
+                //Console.WriteLine("MENU_REQUEST : Completed.");
             }
             else
             {
-                Console.WriteLine("MENU_REQUEST : MENU_URL is not defined.");
+                //Console.WriteLine("MENU_REQUEST : MENU_URL is not defined.");
             }
         }
 
@@ -84,11 +84,11 @@ namespace CLEANXCEL2._2
                 CLEANXCEL2._2.Pages.User.Index.AppWindow.FrameLocalContainer.Source = new Uri(SUBPAGE_URL, UriKind.RelativeOrAbsolute);
                 Storyboard SB = (Storyboard)CLEANXCEL2._2.Pages.User.Index.AppWindow.FindResource("ShowFrame");
                 SB.Begin();
-                Console.WriteLine("SUBPAGE_REQUEST : Completed.");
+                //Console.WriteLine("SUBPAGE_REQUEST : Completed.");
             }
             else
             {
-                Console.WriteLine("SUBPAGE_REQUEST : SUBPAGE_URL is not defined.");
+                //Console.WriteLine("SUBPAGE_REQUEST : SUBPAGE_URL is not defined.");
             }
         }
 
@@ -104,7 +104,7 @@ namespace CLEANXCEL2._2
             }
             else
             {
-                Console.WriteLine("POPUP_REQUEST : POPUP_URL is not defined.");
+                //Console.WriteLine("POPUP_REQUEST : POPUP_URL is not defined.");
             }
         }
 
@@ -120,7 +120,7 @@ namespace CLEANXCEL2._2
             }
             else
             {
-                Console.WriteLine("POPUP_REQUEST : POPUP_URL is not defined.");
+                //Console.WriteLine("POPUP_REQUEST : POPUP_URL is not defined.");
             }
         }
 
@@ -133,7 +133,7 @@ namespace CLEANXCEL2._2
             }
             else
             {
-                Console.WriteLine("POPDOWN_REQUEST : POPDOWN_URL is not defined.");
+                //Console.WriteLine("POPDOWN_REQUEST : POPDOWN_URL is not defined.");
             }
         }
     }

@@ -110,7 +110,9 @@ namespace CLEANXCEL2._2.Pages.Menu.Maintenance
                                 break;
                         }
                     }
-                    catch (Exception ex) { Console.WriteLine( "Pages/Maintenance/Schematics : " + ex.Message); }
+                    catch (Exception ex) {
+                        //Console.WriteLine( "Pages/Maintenance/Schematics : " + ex.Message);
+                    }
                 }
             }
         }
@@ -164,8 +166,8 @@ namespace CLEANXCEL2._2.Pages.Menu.Maintenance
 
             mapping.Add(new Mapping { button = P1, input = ".Y100_10", output = ".WY10010_15" });
             mapping.Add(new Mapping { button = US, input = ".Y100_08", output = ".WY10008_15" });
-            mapping.Add(new Mapping { button = H1, input = ".Y100_11", output = ".WY10011_15" });
-            mapping.Add(new Mapping { button = H2, input = ".Y100_12", output = ".WY10012_15" });
+            ////mapping.Add(new Mapping { button = H1, input = ".Y100_11", output = ".WY10011_15" });
+            ////mapping.Add(new Mapping { button = H2, input = ".Y100_12", output = ".WY10012_15" });
             mapping.Add(new Mapping { button = H3, input = ".Y100_13", output = ".WY10013_15" });
             mapping.Add(new Mapping { button = SV1_1, input = ".Y102_01", output = ".WY10201_15" });
             //mapping.Add(new Mapping { button = SV1_2, input = ".", output = "." });

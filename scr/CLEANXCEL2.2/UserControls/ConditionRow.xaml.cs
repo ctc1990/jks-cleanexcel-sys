@@ -33,7 +33,7 @@ namespace CLEANXCEL2._2.UserControls
 
         private void UC_ConditionRow_Loaded(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine("Condition Row");
+            //Console.WriteLine("Condition Row");
         }
 
         private void Protect_DeleteButton_MouseUp(object sender, MouseButtonEventArgs e)
@@ -60,10 +60,10 @@ namespace CLEANXCEL2._2.UserControls
         {
             try
             {
-                Console.WriteLine(category);
+                //Console.WriteLine(category);
                 string connString = "server=localhost;database=fe01fs;uid=root;password=abcd1234;SSL Mode=none;";
                 string query = "select " + Language + ".terms, condition_list.unit, condition_list.variable_name from condition_list inner join " + Language + " on condition_list.description = " + Language + ".id && condition_list.category = '" + category + "';";
-                Console.WriteLine(query);
+                //Console.WriteLine(query);
 
                 MySqlConnection mySqlConnection = new MySqlConnection(connString);
                 MySqlCommand mySqlCommand = new MySqlCommand();
@@ -79,7 +79,7 @@ namespace CLEANXCEL2._2.UserControls
                     if (!(mySqlDataReader["variable_name"].ToString().ToLower().Contains("below") || mySqlDataReader["variable_name"].ToString().ToLower().Contains("above")))
                         Equipment.Items.Add(mySqlDataReader["terms"]);
                     conditionlabel.Add(new ConditionLabel() { terms = mySqlDataReader["terms"].ToString(), unit = mySqlDataReader["unit"].ToString(), variable_name = mySqlDataReader["variable_name"].ToString() });
-                    Console.WriteLine(mySqlDataReader["terms"]);
+                    //Console.WriteLine(mySqlDataReader["terms"]);
                 }
 
                 mySqlConnection.Close();
