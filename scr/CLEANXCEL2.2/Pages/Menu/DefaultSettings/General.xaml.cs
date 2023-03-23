@@ -172,9 +172,7 @@ namespace CLEANXCEL2._2.Pages.Menu.DefaultSettings
         }
 
         private void SetButtonStatus(bool status)
-        {
-            H1.IsChecked = status;
-            H2.IsChecked = status;
+        {           
             H3.IsChecked = status;
             CH1.IsChecked = status;
             PV1.IsChecked = status;

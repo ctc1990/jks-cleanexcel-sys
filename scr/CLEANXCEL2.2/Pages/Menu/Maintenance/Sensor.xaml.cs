@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CLEANXCEL2._2.Functions.ADS;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -62,11 +63,11 @@ namespace CLEANXCEL2._2.Pages.Menu.Maintenance
                     for (int i = 0; i < InputVariable.Length; i++)
                     {
                         if (i < separator[0])
-                            hconnect[i] = adsClient.AddDeviceNotification(InputVariable[i], adsDataStream, i * 4, 4, AdsTransMode.OnChange, 50, 0, null);
-                        else if (i<separator[1])
-                            hconnect[i] = adsClient.AddDeviceNotification(InputVariable[i], adsDataStream, i * 2, 2, AdsTransMode.OnChange, 50, 0, null);
+                            hconnect[i] = adsClient.AddDeviceNotification(InputVariable[i], adsDataStream, i * 4, 4, AdsTransMode.OnChange, 500, 0, null);
+                        else if (i < separator[1])
+                            hconnect[i] = adsClient.AddDeviceNotification(InputVariable[i], adsDataStream, i * 2, 2, AdsTransMode.OnChange, 500, 0, null);
                         else
-                            hconnect[i] = adsClient.AddDeviceNotification(InputVariable[i], adsDataStream, i * 2, 1, AdsTransMode.OnChange, 50, 0, null);
+                            hconnect[i] = adsClient.AddDeviceNotification(InputVariable[i], adsDataStream, i * 2, 1, AdsTransMode.OnChange, 500, 0, null);
                     }
 
                     adsClient.AdsNotification += new AdsNotificationEventHandler(StatusOnChange);
@@ -149,10 +150,12 @@ namespace CLEANXCEL2._2.Pages.Menu.Maintenance
             DigitalDisplay9.ActualValue = 0.00;
         }
 
-        private void StatusOnChange(object sender, AdsNotificationEventArgs e)
+        private async void StatusOnChange(object sender, AdsNotificationEventArgs e)
         {
             try
             {
+                //Application.Current.Dispatcher.Invoke(() =>
+                //{ 
                 for (int i = 0; i < InputVariable.Count(); i++)
                 {
 
@@ -161,25 +164,26 @@ namespace CLEANXCEL2._2.Pages.Menu.Maintenance
                         if (i < separator[0])
                         {
                             double value = binRead.ReadSingle();
-                            DecodeValue(i, value);
+                            await DecodeValue(i, value);
                         }
-                        else if (i< separator[1])
+                        else if (i < separator[1])
                         {
                             int value = binRead.ReadInt16();
-                            DecodeValue(i, value);
+                            await DecodeValue(i, value);
                         }
                         else
                         {
                             bool value = binRead.ReadBoolean();
-                            DecodeBoolean(i, value);
+                            await DecodeBoolean(i, value);
                         }
                     }
                 }
+                //},System.Windows.Threading.DispatcherPriority.Input);
             }
             catch { }
         }
 
-        private void DecodeValue(int index, double status)
+        private async Task DecodeValue(int index, double status)
         {
             switch (index)
             {
@@ -237,68 +241,68 @@ namespace CLEANXCEL2._2.Pages.Menu.Maintenance
             }
         }
 
-        private void DecodeBoolean(int index, bool status)
+        private async Task DecodeBoolean(int index, bool status)
         {
             switch (index)
             {
                 case 18:
                     ProcessChamberLevel[1] = status;
-                    IndicateLevel2(ProcessChamberLevel, DigitalDisplay1);
+                    await IndicateLevel2(ProcessChamberLevel, DigitalDisplay1);
                     //DigitalDisplay1.Logic = hashtable[159].ToString();      // Reg
                     break;
                 case 19:
                     ProcessChamberLevel[0] = status;
-                    IndicateLevel2(ProcessChamberLevel, DigitalDisplay1);
+                    await IndicateLevel2(ProcessChamberLevel, DigitalDisplay1);
                     //DigitalDisplay1.Logic = hashtable[161].ToString();      // Empty
                     break;
                 case 22:
                     StorageTank1Level[0] = status;
-                    IndicateLevel4(StorageTank1Level, DigitalDisplay3);
+                    await IndicateLevel4(StorageTank1Level, DigitalDisplay3);
                     //DigitalDisplay3.Logic = hashtable[157].ToString();      // Min
                     break;
                 case 23:
                     StorageTank1Level[1] = status;
-                    IndicateLevel4(StorageTank1Level, DigitalDisplay3);
+                    await IndicateLevel4(StorageTank1Level, DigitalDisplay3);
                     //DigitalDisplay3.Logic = hashtable[159].ToString();      // Top
                     break;
                 case 24:
                     StorageTank1Level[2] = status;
-                    IndicateLevel4(StorageTank1Level, DigitalDisplay3);
+                    await IndicateLevel4(StorageTank1Level, DigitalDisplay3);
                     //DigitalDisplay3.Logic = hashtable[158].ToString();      // Reg
                     break;
                 case 25:
                     StorageTank1Level[3] = !status;
-                    IndicateLevel4(StorageTank1Level, DigitalDisplay3);
+                    await IndicateLevel4(StorageTank1Level, DigitalDisplay3);
                     //DigitalDisplay3.Logic = hashtable[160].ToString();      // Max
                     break;
                 case 26:
                     StorageTank2Level[0] = status;
-                    IndicateLowerLevel1(StorageTank2Level, DigitalDisplay4);
+                    await IndicateLowerLevel1(StorageTank2Level, DigitalDisplay4);
                     //DigitalDisplay4.Logic = hashtable[157].ToString();      // Min
                     break;
                 case 28:
                     DistillationTankLevel[0] = status;
-                    IndicateLevel4(DistillationTankLevel, DigitalDisplay6);
+                    await IndicateLevel4(DistillationTankLevel, DigitalDisplay6);
                     //DigitalDisplay6.Logic = hashtable[157].ToString();      // Min
                     break;
                 case 29:
                     DistillationTankLevel[1] = status;
-                    IndicateLevel4(DistillationTankLevel, DigitalDisplay6);
+                    await IndicateLevel4(DistillationTankLevel, DigitalDisplay6);
                     //DigitalDisplay6.Logic = hashtable[159].ToString();      // Top
                     break;
                 case 30:
                     DistillationTankLevel[2] = status;
-                    IndicateLevel4(DistillationTankLevel, DigitalDisplay6);
+                    await IndicateLevel4(DistillationTankLevel, DigitalDisplay6);
                     //DigitalDisplay6.Logic = hashtable[158].ToString();      // Reg
                     break;
                 case 31:
                     DistillationTankLevel[3] = !status;
-                    IndicateLevel4(DistillationTankLevel, DigitalDisplay6);
+                    await IndicateLevel4(DistillationTankLevel, DigitalDisplay6);
                     //DigitalDisplay6.Logic = hashtable[160].ToString();      // Max
                     break;
                 case 32:
                     VacuumTankLevel[0] = !status;
-                    IndicateHigherLevel1(VacuumTankLevel, DigitalDisplay9);
+                    await IndicateHigherLevel1(VacuumTankLevel, DigitalDisplay9);
                     //DigitalDisplay9.Logic = hashtable[160].ToString();      // Max
                     break;
             }
@@ -322,7 +326,7 @@ namespace CLEANXCEL2._2.Pages.Menu.Maintenance
             //}
         }
 
-        private void IndicateLowerLevel1(bool[] state, UIElement uiElement)
+        private async Task IndicateLowerLevel1(bool[] state, UIElement uiElement)
         {
             UserControls.DigitalDisplay digitalDisplay = (UserControls.DigitalDisplay)uiElement;
 
@@ -334,7 +338,7 @@ namespace CLEANXCEL2._2.Pages.Menu.Maintenance
                 digitalDisplay.Logic = hashtable[161].ToString();
         }
 
-        private void IndicateHigherLevel1(bool[] state, UIElement uiElement)
+        private async Task IndicateHigherLevel1(bool[] state, UIElement uiElement)
         {
             UserControls.DigitalDisplay digitalDisplay = (UserControls.DigitalDisplay)uiElement;
 
@@ -346,7 +350,7 @@ namespace CLEANXCEL2._2.Pages.Menu.Maintenance
                 digitalDisplay.Logic = hashtable[158].ToString();
         }
 
-        private void IndicateLevel2(bool[] state, UIElement uiElement)
+        private async Task IndicateLevel2(bool[] state, UIElement uiElement)
         {
             UserControls.DigitalDisplay digitalDisplay = (UserControls.DigitalDisplay)uiElement;
 
@@ -361,7 +365,7 @@ namespace CLEANXCEL2._2.Pages.Menu.Maintenance
                 digitalDisplay.Logic = hashtable[161].ToString();
         }
 
-        private void IndicateLevel4(bool[] state, UIElement uiElement)
+        private async Task IndicateLevel4(bool[] state, UIElement uiElement)
         {
             UserControls.DigitalDisplay digitalDisplay = (UserControls.DigitalDisplay)uiElement;
 
@@ -381,11 +385,11 @@ namespace CLEANXCEL2._2.Pages.Menu.Maintenance
                 }
                 else
                     digitalDisplay.Logic = hashtable[159].ToString();
-                    //digitalDisplay.Logic = hashtable[157].ToString();
+                //digitalDisplay.Logic = hashtable[157].ToString();
             }
             else
                 digitalDisplay.Logic = hashtable[157].ToString();
-                //digitalDisplay.Logic = hashtable[161].ToString();
+            //digitalDisplay.Logic = hashtable[161].ToString();
 
         }
 

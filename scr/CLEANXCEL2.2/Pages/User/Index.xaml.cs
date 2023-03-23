@@ -29,7 +29,7 @@ namespace CLEANXCEL2._2.Pages.User
         {
             InitializeComponent();
             AppWindow = this;
-            Console.WriteLine("Pages/User/Index Started");
+            //Console.WriteLine("Pages/User/Index Started");
         }
 
         private void FrameContainerLoaded(object sender, RoutedEventArgs e)

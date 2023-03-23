@@ -40,11 +40,11 @@ namespace CLEANXCEL2._2.Pages.Menu.DefaultSettings
                 AppWindow.FrameLocalContainer.Source = new Uri(MENUPAGE_URL, UriKind.RelativeOrAbsolute);
                 Storyboard SB = (Storyboard)AppWindow.FindResource("ShowFrame");
                 SB.Begin();
-                Console.WriteLine("MENUPAGE_REQUEST : Completed.");
+                //Console.WriteLine("MENUPAGE_REQUEST : Completed.");
             }
             else
             {
-                Console.WriteLine("MENUPAGE_REQUEST : MENUPAGE_URL is not defined.");
+                //Console.WriteLine("MENUPAGE_REQUEST : MENUPAGE_URL is not defined.");
             }
         }
 

@@ -92,7 +92,7 @@ namespace CLEANXCEL2._2.Pages.Menu.Operation
                 else if (e.NotificationHandle == hconnect[1])
                 {
                     string value = binRead.ReadPlcAnsiString(99);
-                    Console.WriteLine("Description : " + value);
+                    //Console.WriteLine("Description : " + value);
                     myrad.Tag = string.Format(value);
                     ProcessName.Text = string.Format(value);
                     Globals.processGlobalName = ProcessName.Text;                 

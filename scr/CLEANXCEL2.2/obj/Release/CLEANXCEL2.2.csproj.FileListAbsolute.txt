@@ -1,0 +1,285 @@
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\CLEANXCEL2.2.csproj.AssemblyReference.cache
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\UserControls\RadialPBar.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\MainWindow.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Alarm\CurrentAlarm.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Alarm\HistoryAlarm.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Alarm\Index.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Analytics\Index.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Analytics\Graph.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Analytics\StatusDiagram.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Analytics\ValueDiagram.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Bypass\Index.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\CurrentStatus\Index.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\DefaultSettings\Index.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\DefaultSettings\Station1.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Maintenance\Restore.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Maintenance\Index.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Maintenance\Sensor.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Operation\Index.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Operation\Operation.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\RecipeManagement\Index.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\RecipeManagement\Part.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\RecipeManagement\Process.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\RecipeManagement\Recipe.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\User\Login.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\User\Register.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\User\Reset.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\User\Roles.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Window\WindowsMessageBoxInProgress.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Window\WindowsMessageBox.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\UserControls\AlarmRow.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\UserControls\Card.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\UserControls\ConditionButton.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\UserControls\RecipeTableWithoutUS.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\UserControls\RecipeTable.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\UserControls\ConditionPanel.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\UserControls\ConditionRow.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\UserControls\Dial.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\UserControls\DigitalDisplay.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\UserControls\RadialPBar.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\UserControls\RangeSlider.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\UserControls\aVXTable.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\UserControls\StandardTable.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\App.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\CLEANXCEL2.2_Content.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\CLEANXCEL2.2_MarkupCompile.cache
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\CLEANXCEL2.2_MarkupCompile.lref
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\bin\Release\CLEANXCEL2.2.exe.config
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\bin\Release\CLEANXCEL2.2.exe.manifest
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\bin\Release\CLEANXCEL2.2.application
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\bin\Release\CLEANXCEL2.2.exe
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\bin\Release\CLEANXCEL2.2.pdb
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\bin\Release\FontAwesome.WPF.dll
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\bin\Release\Hardcodet.Wpf.TaskbarNotification.dll
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\bin\Release\MySql.Data.dll
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\bin\Release\MySqlBackup.dll
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\bin\Release\System.Windows.Controls.DataVisualization.Toolkit.dll
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\bin\Release\TwinCAT.Ads.dll
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\bin\Release\FontAwesome.WPF.xml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\bin\Release\Hardcodet.Wpf.TaskbarNotification.pdb
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\bin\Release\Hardcodet.Wpf.TaskbarNotification.xml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\bin\Release\System.Windows.Controls.DataVisualization.Toolkit.xml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\bin\Release\TwinCAT.Ads.xml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Intro.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Bypass\SchematicsActive.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\CurrentStatus\Schematics.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\DefaultSettings\General.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Index.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Maintenance\Schematics.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\RecipeManagement\SubProcess.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\UnderConstruction\UnderConstruction.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\User\Index.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\UserControls\Schematics.g.cs
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\App.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Dictionaries\Animations.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Dictionaries\Buttons.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Dictionaries\Colors.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Dictionaries\DataGrid.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Dictionaries\Dimensions.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Dictionaries\Fonts.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Dictionaries\FormControls.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Dictionaries\Graph.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Dictionaries\Info.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Dictionaries\ManualModeStyle.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Dictionaries\RangeSlider.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Dictionaries\ScrollViewer.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Dictionaries\Texts.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Intro.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\MainWindow.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Alarm\CurrentAlarm.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Alarm\HistoryAlarm.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Alarm\Index.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Analytics\Index.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Analytics\Graph.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Analytics\StatusDiagram.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Analytics\ValueDiagram.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Bypass\Index.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Bypass\SchematicsActive.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\CurrentStatus\Index.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\CurrentStatus\Schematics.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\DefaultSettings\General.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\DefaultSettings\Index.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\DefaultSettings\Station1.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Index.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Maintenance\Restore.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Maintenance\Index.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Maintenance\Schematics.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Maintenance\Sensor.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Operation\Index.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Operation\Operation.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\RecipeManagement\Index.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\RecipeManagement\Part.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\RecipeManagement\Process.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\RecipeManagement\Recipe.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\RecipeManagement\SubProcess.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\UnderConstruction\UnderConstruction.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\User\Index.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\User\Login.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\User\Register.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\User\Reset.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\User\Roles.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Window\WindowsMessageBoxInProgress.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\Pages\Window\WindowsMessageBox.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\UserControls\AlarmRow.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\UserControls\Card.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\UserControls\ConditionButton.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\UserControls\RecipeTableWithoutUS.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\UserControls\RecipeTable.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\UserControls\ConditionPanel.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\UserControls\ConditionRow.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\UserControls\Dial.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\UserControls\DigitalDisplay.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\UserControls\RangeSlider.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\UserControls\Schematics.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\UserControls\aVXTable.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\UserControls\StandardTable.baml
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\CLEANXCEL2.2.g.resources
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\CLEANXCEL2._2.Properties.Resources.resources
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\CLEANXCEL2.2.csproj.GenerateResource.cache
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\CLEANXCEL2.2.csproj.CoreCompileInputs.cache
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\CLEANXCEL2.2.exe.manifest
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\CLEANXCEL2.2.application
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\CLEANXCEL2.2.csproj.CopyComplete
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\CLEANXCEL2.2.exe
+C:\Users\FE\Desktop\CLEANXCEL2.2\testing version\dll\scr\CLEANXCEL2.2\obj\Release\CLEANXCEL2.2.pdb
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\UserControls\RadialPBar.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Intro.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\MainWindow.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Alarm\CurrentAlarm.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Alarm\HistoryAlarm.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Alarm\Index.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Analytics\Index.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Analytics\Graph.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Analytics\StatusDiagram.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Analytics\ValueDiagram.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Bypass\Index.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Bypass\SchematicsActive.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\CurrentStatus\Index.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\CurrentStatus\Schematics.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\DefaultSettings\General.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\DefaultSettings\Index.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\DefaultSettings\Station1.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Index.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Maintenance\Restore.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Maintenance\Index.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Maintenance\Schematics.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Maintenance\Sensor.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Operation\Index.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Operation\Operation.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\RecipeManagement\Index.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\RecipeManagement\Part.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\RecipeManagement\Process.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\RecipeManagement\Recipe.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\RecipeManagement\SubProcess.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\UnderConstruction\UnderConstruction.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\User\Index.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\User\Login.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\User\Register.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\User\Reset.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\User\Roles.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Window\WindowsMessageBoxInProgress.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Window\WindowsMessageBox.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\UserControls\AlarmRow.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\UserControls\Card.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\UserControls\ConditionButton.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\UserControls\RecipeTableWithoutUS.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\UserControls\RecipeTable.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\UserControls\ConditionPanel.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\UserControls\ConditionRow.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\UserControls\Dial.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\UserControls\DigitalDisplay.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\UserControls\RadialPBar.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\UserControls\RangeSlider.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\UserControls\aVXTable.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\UserControls\StandardTable.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\App.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\CLEANXCEL2.2_Content.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\GeneratedInternalTypeHelper.g.cs
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\CLEANXCEL2.2_MarkupCompile.cache
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\CLEANXCEL2.2_MarkupCompile.lref
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\CLEANXCEL2.2.exe
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\CLEANXCEL2.2.pdb
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\bin\Release\CLEANXCEL2.2.exe.config
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\bin\Release\CLEANXCEL2.2.exe.manifest
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\bin\Release\CLEANXCEL2.2.application
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\bin\Release\CLEANXCEL2.2.exe
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\bin\Release\CLEANXCEL2.2.pdb
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\bin\Release\FontAwesome.WPF.dll
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\bin\Release\Hardcodet.Wpf.TaskbarNotification.dll
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\bin\Release\MySql.Data.dll
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\bin\Release\MySqlBackup.dll
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\bin\Release\System.Windows.Controls.DataVisualization.Toolkit.dll
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\bin\Release\FontAwesome.WPF.xml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\bin\Release\Hardcodet.Wpf.TaskbarNotification.pdb
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\bin\Release\Hardcodet.Wpf.TaskbarNotification.xml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\bin\Release\System.Windows.Controls.DataVisualization.Toolkit.xml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\App.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Dictionaries\Animations.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Dictionaries\Buttons.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Dictionaries\Colors.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Dictionaries\DataGrid.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Dictionaries\Dimensions.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Dictionaries\Fonts.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Dictionaries\FormControls.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Dictionaries\Graph.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Dictionaries\Info.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Dictionaries\ManualModeStyle.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Dictionaries\RangeSlider.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Dictionaries\ScrollViewer.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Dictionaries\Texts.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Intro.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\MainWindow.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Alarm\CurrentAlarm.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Alarm\HistoryAlarm.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Alarm\Index.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Analytics\Index.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Analytics\Graph.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Analytics\StatusDiagram.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Analytics\ValueDiagram.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Bypass\Index.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Bypass\SchematicsActive.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\CurrentStatus\Index.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\CurrentStatus\Schematics.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\DefaultSettings\General.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\DefaultSettings\Index.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\DefaultSettings\Station1.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Index.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Maintenance\Restore.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Maintenance\Index.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Maintenance\Schematics.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Maintenance\Sensor.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Operation\Index.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\Operation\Operation.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\RecipeManagement\Index.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\RecipeManagement\Part.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\RecipeManagement\Process.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\RecipeManagement\Recipe.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\RecipeManagement\SubProcess.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Menu\UnderConstruction\UnderConstruction.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\User\Index.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\User\Login.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\User\Register.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\User\Reset.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\User\Roles.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Window\WindowsMessageBoxInProgress.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\Pages\Window\WindowsMessageBox.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\UserControls\AlarmRow.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\UserControls\Card.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\UserControls\ConditionButton.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\UserControls\RecipeTableWithoutUS.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\UserControls\RecipeTable.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\UserControls\ConditionPanel.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\UserControls\ConditionRow.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\UserControls\Dial.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\UserControls\DigitalDisplay.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\UserControls\RangeSlider.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\UserControls\aVXTable.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\UserControls\StandardTable.baml
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\CLEANXCEL2.2.g.resources
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\CLEANXCEL2._2.Properties.Resources.resources
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\CLEANXCEL2.2.csproj.GenerateResource.cache
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\CLEANXCEL2.2.csproj.CoreCompileInputs.cache
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\CLEANXCEL2.2.exe.manifest
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\CLEANXCEL2.2.application
+D:\work\New folder\testing dll\scr\CLEANXCEL2.2\obj\Release\CLEANXCEL2.2.csproj.CopyComplete

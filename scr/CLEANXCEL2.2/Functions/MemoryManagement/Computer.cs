@@ -82,7 +82,7 @@ namespace CLEANXCEL2._2.Functions.MemoryManagement
 
         public static void GetOSVersion()
         {
-            Console.WriteLine(Environment.OSVersion.VersionString);
+            //Console.WriteLine(Environment.OSVersion.VersionString);
         }
     }
 }

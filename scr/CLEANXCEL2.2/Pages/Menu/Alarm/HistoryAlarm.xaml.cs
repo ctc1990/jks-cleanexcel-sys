@@ -161,7 +161,7 @@ namespace CLEANXCEL2._2.Pages.Menu.Alarm
         {
             if (e.VerticalOffset == (sender as ScrollViewer).ScrollableHeight && e.VerticalOffset != 0)
             {
-                Console.WriteLine("End");
+                //Console.WriteLine("End");
                 //RenderAlarm("alarm_history.activated_time", "desc");
             }
         }

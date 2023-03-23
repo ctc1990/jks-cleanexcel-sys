@@ -31,7 +31,7 @@ namespace CLEANXCEL2._2.Functions.EventNotifier
             }
             catch (Exception err)
             {
-                Console.WriteLine(err.Message.ToString());
+                ////Console.WriteLine(err.Message.ToString());
             }
         }
 
@@ -43,7 +43,8 @@ namespace CLEANXCEL2._2.Functions.EventNotifier
                 {
                     if (Globals.InitiatingRecipe)
                     {
-                        Functions.RecipeManagement.RecipeStructure.StatusManagement.POST_History_Status_Started(tcAdsClient);
+                        //20230310
+                        //Functions.RecipeManagement.RecipeStructure.StatusManagement.POST_History_Status_Started(tcAdsClient);
                         Globals.InitiatingRecipe = false;
                     }
                     else
@@ -51,23 +52,23 @@ namespace CLEANXCEL2._2.Functions.EventNotifier
                         int value = binRead.ReadInt16();
                         if (Globals.LoggingHistoryStatusDefault)
                         {
-                            Console.WriteLine("Process Case No: " + value);
+                            ////Console.WriteLine("Process Case No: " + value);
 
                             switch (value)
                             {
                                 case 1:
-                                    Console.WriteLine("Completion Time : " + Functions.ADS.ADS_ReadWrite.ADS_ReadValue(tcAdsClient, ".ARDsStnSeqProcessCtrl[1].Out_iComConProcessTimeEV"));
+                                    ////Console.WriteLine("Completion Time : " + Functions.ADS.ADS_ReadWrite.ADS_ReadValue(tcAdsClient, ".ARDsStnSeqProcessCtrl[1].Out_iComConProcessTimeEV"));
                                     break;
                                 // Waiting for Start Condition being met
                                 case 2:
                                     break;
                                 // Waiting for Stop Condition being met
                                 case 3:
-                                    Functions.RecipeManagement.RecipeStructure.StatusManagement.POST_History_Status(tcAdsClient);
-                                    Console.WriteLine("Start Time : " + Functions.ADS.ADS_ReadWrite.ADS_ReadValue(tcAdsClient, ".ARDsStnSeqProcessCtrl[1].Out_iComConProcessTimeEV"));
+                                    //Functions.RecipeManagement.RecipeStructure.StatusManagement.POST_History_Status(tcAdsClient);
+                                    ////Console.WriteLine("Start Time : " + Functions.ADS.ADS_ReadWrite.ADS_ReadValue(tcAdsClient, ".ARDsStnSeqProcessCtrl[1].Out_iComConProcessTimeEV"));
                                     break;
                                 case 99:
-                                    Functions.RecipeManagement.RecipeStructure.StatusManagement.POST_History_Status_Ended(tcAdsClient);
+                                    //Functions.RecipeManagement.RecipeStructure.StatusManagement.POST_History_Status_Ended(tcAdsClient);
 
                                     Functions.ADS.ADS_ReadWrite.ADS_WriteValue(tcAdsClient, ".bAutoStartPB", "false", "bool");
                                     Functions.ADS.ADS_ReadWrite.ADS_WriteValue(tcAdsClient, ".bBasketCfmEn", "false", "bool");
