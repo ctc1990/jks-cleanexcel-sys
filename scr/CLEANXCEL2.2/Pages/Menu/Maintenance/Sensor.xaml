@@ -15,21 +15,24 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Column="0">
             <usercontrols:DigitalDisplay x:Name="DigitalDisplay1"/>
-            <usercontrols:DigitalDisplay x:Name="DigitalDisplay3"/>
-            <usercontrols:DigitalDisplay x:Name="DigitalDisplay5"/>
+            <usercontrols:DigitalDisplay x:Name="DigitalDisplay4"/>
             <usercontrols:DigitalDisplay x:Name="DigitalDisplay7"/>
-            <usercontrols:DigitalDisplay x:Name="DigitalDisplay9"/>
         </StackPanel>
 
         <StackPanel Grid.Column="1" Loaded="StackPanel_Loaded">
             <usercontrols:DigitalDisplay x:Name="DigitalDisplay2"/>
-            <usercontrols:DigitalDisplay x:Name="DigitalDisplay4"/>
-            <usercontrols:DigitalDisplay x:Name="DigitalDisplay6"/>
+            <usercontrols:DigitalDisplay x:Name="DigitalDisplay5"/>
             <usercontrols:DigitalDisplay x:Name="DigitalDisplay8"/>
+        </StackPanel>
+        <StackPanel Grid.Column="2" Loaded="StackPanel_Loaded">
+            <usercontrols:DigitalDisplay x:Name="DigitalDisplay3"/>
+            <usercontrols:DigitalDisplay x:Name="DigitalDisplay6"/>
+            <usercontrols:DigitalDisplay x:Name="DigitalDisplay9"/>
         </StackPanel>
     </Grid>
 </Page>

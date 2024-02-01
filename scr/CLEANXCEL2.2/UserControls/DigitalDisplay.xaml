@@ -7,7 +7,7 @@
              Loaded="UserControl_Loaded"
              mc:Ignorable="d" 
              Margin="{StaticResource FiboSeq1}"
-             d:DesignHeight="300" d:DesignWidth="350">
+             d:DesignHeight="200" d:DesignWidth="250">
  
     <Grid>
         <Border BorderThickness="1">

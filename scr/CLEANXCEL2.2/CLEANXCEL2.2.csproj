@@ -278,6 +278,9 @@
     <Compile Include="UserControls\aVXTable.xaml.cs">
       <DependentUpon>aVXTable.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Schematics.xaml.cs">
+      <DependentUpon>Schematics.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\StandardTable.xaml.cs">
       <DependentUpon>StandardTable.xaml</DependentUpon>
     </Compile>
@@ -533,6 +536,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControls\aVXTable.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Schematics.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

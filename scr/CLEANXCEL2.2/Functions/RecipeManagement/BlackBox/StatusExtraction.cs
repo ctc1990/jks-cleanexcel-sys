@@ -12,42 +12,42 @@ namespace CLEANXCEL2._2.Functions.RecipeManagement.BlackBox
 {
     class StatusExtraction
     {
-        //public static string ExecuteStatusExtraction(TcAdsClient adsClient)
-        //{
-        //    //MySqlCommand mySqlCommand = new MySqlCommand();
-        //    //string parameters = "";
-        //    //try
-        //    //{
-        //    //    List<Schematics.IO> list = (new Schematics()).InitiateMapping();
+        public static string ExecuteStatusExtraction(TcAdsClient adsClient)
+        {
+            MySqlCommand mySqlCommand = new MySqlCommand();
+            string parameters = "";
+            try
+            {
+                List<Schematics.IO> list = (new Schematics()).InitiateMapping();
 
-        //    //    foreach (Schematics.IO io in list)
-        //    //    {
-        //    //        try
-        //    //        {
-        //    //            parameters += io.tag + ":" + ADS_ReadWrite.ADS_ReadValue(adsClient, io.input) + "~";
-        //    //        }
-        //    //        catch
-        //    //        {
-        //    //            parameters += io.tag + ":null~";
-        //    //        }
-        //    //    }
+                foreach (Schematics.IO io in list)
+                {
+                    try
+                    {
+                        parameters += io.tag + ":" + ADS_ReadWrite.ADS_ReadValue(adsClient, io.input) + "~";
+                    }
+                    catch
+                    {
+                        parameters += io.tag + ":null~";
+                    }
+                }
 
-        //    //    foreach (Sensor sensor in sensors)
-        //    //    {
-        //    //        try
-        //    //        {
-        //    //            parameters += sensor.tag + ":" + ADS_ReadWrite.ADS_ReadValue(adsClient, sensor.input) + "~";
-        //    //        }
-        //    //        catch
-        //    //        {
-        //    //            parameters += sensor.tag + ":null~";
-        //    //        }
-        //    //    }
+                foreach (Sensor sensor in sensors)
+                {
+                    try
+                    {
+                        parameters += sensor.tag + ":" + ADS_ReadWrite.ADS_ReadValue(adsClient, sensor.input) + "~";
+                    }
+                    catch
+                    {
+                        parameters += sensor.tag + ":null~";
+                    }
+                }
 
-        //    //    return parameters.Remove(parameters.Length-1);
-        //    //}
-        //    //catch (Exception ex) { return ex.Message.ToString(); }
-        //}
+                return parameters.Remove(parameters.Length - 1);
+            }
+            catch (Exception ex) { return ex.Message.ToString(); }
+        }
 
         private static readonly List<Sensor> sensors = new List<Sensor>() {
             new Sensor(){ tag = "187 Actual", input = ".ARrStnTempPV[1]" },

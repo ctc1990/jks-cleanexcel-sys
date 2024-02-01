@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CLEANXCEL2.2.exe" size="1272272">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CLEANXCEL2.2.exe" size="1311184">
       <assemblyIdentity name="CLEANXCEL2.2" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ELX/zyfgfkRL3nSzNkse/J4cuCzzzjvf9H/xvkwjZ+w=</dsig:DigestValue>
+        <dsig:DigestValue>rbd4/w8UXxcAVrxAJfpYFq57A1qQmXV1op12YVgsNac=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

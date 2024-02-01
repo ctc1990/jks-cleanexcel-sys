@@ -144,7 +144,7 @@ namespace CLEANXCEL2._2.Pages.Menu.Operation
 
         private void Initialize()
         {
-            LoadPartName();
+            //LoadPartName();
             LoadRecipeName();
         }
 
@@ -182,7 +182,7 @@ namespace CLEANXCEL2._2.Pages.Menu.Operation
             {
                 RadioButton radioButton = new RadioButton()
                 {
-                    Name = "PARTS" + parts[0][i] + "_" + parts[3][i],
+                    Name = "PARTS_" + parts[0][i].Replace(" ", "_"),// + "_" + parts[3][i].Replace(" ", "_"),
                     Tag = parts[0][i],
                     ToolTip = parts[1][i],
                     Content = parts[2][i],

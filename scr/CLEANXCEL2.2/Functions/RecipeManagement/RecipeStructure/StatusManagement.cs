@@ -28,61 +28,61 @@ namespace CLEANXCEL2._2.Functions.RecipeManagement.RecipeStructure
             }
         }
 
-        //public static bool POST_History_Status_Started(TcAdsClient tcAdsClient)
-        //{
-        //    try
-        //    {
-        //        MySqlCommand mySqlCommand = new MySqlCommand();
+        public static bool POST_History_Status_Started(TcAdsClient tcAdsClient)
+        {
+            try
+            {
+                MySqlCommand mySqlCommand = new MySqlCommand();
 
-        //        string subdescription = Functions.ADS.ADS_ReadWrite.ADS_ReadValue(tcAdsClient, ".DSHmiStationDisplayInfo[1].sStationSubDescription");
-        //        string[] description = new string[2];
-        //        try { description = subdescription.Split('\n'); }
-        //        catch { description = new string[] { subdescription, subdescription }; }
-        //        //mySqlCommand.Parameters.AddWithValue("@recipe_name", Globals.currentRecipe);
-        //        mySqlCommand.Parameters.AddWithValue("@process_name", description[0]);
-        //        mySqlCommand.Parameters.AddWithValue("@sub_process_name", description[1]);
-        //        mySqlCommand.Parameters.AddWithValue("@start_time", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
-        //        mySqlCommand.Parameters.AddWithValue("@end_time", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
-        //        Functions.SQL.Query.ExecuteNonQuery("insert into history_status (recipe_name, process_name, sub_process_name, parameters, start_time, end_time, percent) values(" +
-        //                "(select max(id) from history_recipe), @process_name, @sub_process_name, '" +
-        //                Functions.RecipeManagement.BlackBox.StatusExtraction.ExecuteStatusExtraction(tcAdsClient) + "', @start_time, @end_time, 0);", mySqlCommand);
+                string subdescription = Functions.ADS.ADS_ReadWrite.ADS_ReadValue(tcAdsClient, ".DSHmiStationDisplayInfo[1].sStationSubDescription");
+                string[] description = new string[2];
+                try { description = subdescription.Split('\n'); }
+                catch { description = new string[] { subdescription, subdescription }; }
+                //mySqlCommand.Parameters.AddWithValue("@recipe_name", Globals.currentRecipe);
+                mySqlCommand.Parameters.AddWithValue("@process_name", description[0]);
+                mySqlCommand.Parameters.AddWithValue("@sub_process_name", description[1]);
+                mySqlCommand.Parameters.AddWithValue("@start_time", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+                mySqlCommand.Parameters.AddWithValue("@end_time", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+                Functions.SQL.Query.ExecuteNonQuery("insert into history_status (recipe_name, process_name, sub_process_name, parameters, start_time, end_time, percent) values(" +
+                        "(select max(id) from history_recipe), @process_name, @sub_process_name, '" +
+                        Functions.RecipeManagement.BlackBox.StatusExtraction.ExecuteStatusExtraction(tcAdsClient) + "', @start_time, @end_time, 0);", mySqlCommand);
 
-        //        return true;
-        //    }
-        //    catch (MySqlException)
-        //    {
-        //        return false;
-        //    }
-        //}
+                return true;
+            }
+            catch (MySqlException)
+            {
+                return false;
+            }
+        }
 
-        //public static bool POST_History_Status(TcAdsClient tcAdsClient)
-        //{
-        //    try
-        //    {
-        //        MySqlCommand mySqlCommand = new MySqlCommand();
+        public static bool POST_History_Status(TcAdsClient tcAdsClient)
+        {
+            try
+            {
+                MySqlCommand mySqlCommand = new MySqlCommand();
 
-        //        string subdescription = Functions.ADS.ADS_ReadWrite.ADS_ReadValue(tcAdsClient, ".DSHmiStationDisplayInfo[1].sStationSubDescription");
-        //        string[] description = new string[2];
-        //        try { description = subdescription.Split('\n'); }
-        //        catch { description = new string[] { subdescription, subdescription }; }
-        //        //mySqlCommand.Parameters.AddWithValue("@recipe_name", Globals.currentRecipe);
-        //        mySqlCommand.Parameters.AddWithValue("@process_name", description[0]);
-        //        mySqlCommand.Parameters.AddWithValue("@sub_process_name", description[1]);
-        //        mySqlCommand.Parameters.AddWithValue("@start_time", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
-        //        mySqlCommand.Parameters.AddWithValue("@end_time", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
-        //        mySqlCommand.Parameters.AddWithValue("@percent", "100");
-        //        Functions.SQL.Query.ExecuteNonQuery("update history_status set history_status.end_time = @end_time, history_status.percent = @percent order by history_status.id desc limit 1", mySqlCommand);
-        //        Functions.SQL.Query.ExecuteNonQuery("insert into history_status (recipe_name, process_name, sub_process_name, parameters, start_time, end_time, percent) values(" +
-        //                "(select max(id) from history_recipe), @process_name, @sub_process_name, '" +
-        //                Functions.RecipeManagement.BlackBox.StatusExtraction.ExecuteStatusExtraction(tcAdsClient) + "', @start_time, @end_time, 0);", mySqlCommand);
+                string subdescription = Functions.ADS.ADS_ReadWrite.ADS_ReadValue(tcAdsClient, ".DSHmiStationDisplayInfo[1].sStationSubDescription");
+                string[] description = new string[2];
+                try { description = subdescription.Split('\n'); }
+                catch { description = new string[] { subdescription, subdescription }; }
+                //mySqlCommand.Parameters.AddWithValue("@recipe_name", Globals.currentRecipe);
+                mySqlCommand.Parameters.AddWithValue("@process_name", description[0]);
+                mySqlCommand.Parameters.AddWithValue("@sub_process_name", description[1]);
+                mySqlCommand.Parameters.AddWithValue("@start_time", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+                mySqlCommand.Parameters.AddWithValue("@end_time", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+                mySqlCommand.Parameters.AddWithValue("@percent", "100");
+                Functions.SQL.Query.ExecuteNonQuery("update history_status set history_status.end_time = @end_time, history_status.percent = @percent order by history_status.id desc limit 1", mySqlCommand);
+                Functions.SQL.Query.ExecuteNonQuery("insert into history_status (recipe_name, process_name, sub_process_name, parameters, start_time, end_time, percent) values(" +
+                        "(select max(id) from history_recipe), @process_name, @sub_process_name, '" +
+                        Functions.RecipeManagement.BlackBox.StatusExtraction.ExecuteStatusExtraction(tcAdsClient) + "', @start_time, @end_time, 0);", mySqlCommand);
 
-        //        return true;
-        //    }
-        //    catch (MySqlException)
-        //    {
-        //        return false;
-        //    }
-        //}
+                return true;
+            }
+            catch (MySqlException)
+            {
+                return false;
+            }
+        }
 
         public static bool POST_History_Status_Ended(TcAdsClient tcAdsClient)
         {

@@ -60,10 +60,10 @@ namespace CLEANXCEL2._2.Pages.Menu.RecipeManagement
             Button button = sender as Button;
             int index = part[1].FindIndex(x => x.Contains(button.ToolTip.ToString()));
 
-            TBPartName.Text = part[1][index];
-            TBDescription.Text = part[2][index];
-            CBRecipeID.SelectedItem = part[3][index] + " - " + part[4][index];
-            TBBatchNo.Text = part[5][index];
+            TBPartName.Text = part[0][index];
+            TBDescription.Text = part[1][index];
+            CBRecipeID.SelectedItem = CBRecipeID.Items.Cast<string>().Where(x => x.Contains(part[3][index])).FirstOrDefault();
+            TBBatchNo.Text = part[4][index];
         }
 
         private void Save_Click(object sender, RoutedEventArgs e)

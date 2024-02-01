@@ -253,7 +253,11 @@ namespace CLEANXCEL2._2.Pages.Menu
             {
                 adsClient.Connect(Globals.AMSNetID, Globals.AMSPort);
                 alarmNotification.AlarmGenerateNotif(adsClient, ".ARbAlarmOutput");
-                subprocessNotification.SubProcessChangeGenerateNotif(adsClient, ".fbMainStationProcess_Stn[1].StnSeqProcessfb.iStnSeqProcessCaseNo");
+
+                Thread thread = new Thread(new ThreadStart(ThreadProcessChangeNotif));
+                thread.Start();
+
+                //subprocessNotification.SubProcessChangeGenerateNotif(adsClient, ".fbMainStationProcess_Stn[1].StnSeqProcessfb.iStnSeqProcessCaseNo");
                 Globals.CONNECTION = true;
                 MMCurrentStatus.IsChecked = true;
                 Functions.EventNotifier.LoadingDisplay.Stop(LoadingDisplay.LoadingActions.Loading);
@@ -310,14 +314,14 @@ namespace CLEANXCEL2._2.Pages.Menu
 
         private void IntervalLogging_Tick(object sender, EventArgs e)
         {
-            //Functions.RecipeManagement.RecipeStructure.StatusManagement.POST_History_Status(adsClient);
+            Functions.RecipeManagement.RecipeStructure.StatusManagement.POST_History_Status(adsClient);
         }
 
         public void StopIntervalLogging()
         {
             IntervalLogging.Stop();
 
-            //Functions.RecipeManagement.RecipeStructure.StatusManagement.POST_History_Status_Ended(adsClient);
+            Functions.RecipeManagement.RecipeStructure.StatusManagement.POST_History_Status_Ended(adsClient);
 
             Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, ".bAutoStartPB", "false", "bool");
             Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, ".bBasketCfmEn", "false", "bool");
@@ -343,7 +347,7 @@ namespace CLEANXCEL2._2.Pages.Menu
         {
             if (notifier)
             {
-                CheckAuthentication();
+                CheckAuthentication();                                
                 InitializeADSNotifier();
                 notifier = false;
             }
@@ -361,6 +365,11 @@ namespace CLEANXCEL2._2.Pages.Menu
                 adsClient.Disconnect();
                 adsClient.Dispose();
             }
+        }
+
+        private void ThreadProcessChangeNotif()
+        {
+            subprocessNotification.SubProcessChangeGenerateNotif(adsClient, ".fbMainStationProcess_Stn[1].StnSeqProcessfb.iStnSeqProcessCaseNo");
         }
     }
 }

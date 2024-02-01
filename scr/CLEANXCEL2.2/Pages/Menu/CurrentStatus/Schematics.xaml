@@ -1205,7 +1205,7 @@
         <ScrollViewer Grid.Column="1" Template="{StaticResource StandardScrollViewer}" VerticalScrollBarVisibility="Auto" 
                       PanningMode="VerticalOnly">
             <Border Margin="5,0" HorizontalAlignment="Right">
-                <Frame x:Name="FrameSensor" Loaded="Frame_Loaded"/>
+                <Frame x:Name="FrameSensor" Loaded="Frame_Loaded" HorizontalAlignment="Center"/>
             </Border>
         </ScrollViewer>
         <Border Background="Transparent" Margin="-10,0,10,0"/>
