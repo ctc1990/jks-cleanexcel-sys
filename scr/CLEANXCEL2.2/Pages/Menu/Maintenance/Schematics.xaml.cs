@@ -162,6 +162,7 @@ namespace CLEANXCEL2._2.Pages.Menu.Maintenance
             mapping.Add(new Mapping { button = AV1_24, input = ".Y103_03", output = ".WY10303_15" });
             mapping.Add(new Mapping { button = AV1_25, input = ".Y103_04", output = ".WY10304_15" });
             mapping.Add(new Mapping { button = AV1_26, input = ".Y103_05", output = ".WY10305_15" });
+            mapping.Add(new Mapping { button = AV1_20, input = ".Y103_06", output = ".WY10306_15" });//feb2024
             #endregion
 
             mapping.Add(new Mapping { button = P1, input = ".Y100_10", output = ".WY10010_15" });
@@ -180,6 +181,7 @@ namespace CLEANXCEL2._2.Pages.Menu.Maintenance
             mapping.Add(new Mapping { button = Door, input = ".X101_04", output = ".WY10014_15" }); //Open = .WY10015_15 (.X101_03), Close = .WY10014_15 (.X101_04)
             mapping.Add(new Mapping { button = Door, input = ".X101_03", output = ".WY10015_15" }); //Open = .WY10015_15 (.X101_03), Close = .WY10014_15 (.X101_04)
             mapping.Add(new Mapping { button = Lamp, input = ".Y102_13", output = ".WY10213_15" });
+            
                         //mapping.Add(new Mapping { button = Circulation, input = ".wPumpCircFunction", output = ".wPumpCircFunction" });
             //mapping.Add(new Mapping { button = SolventTopUp, input = ".wSolventTopupFunction.15", output = ".wSolventTopupFunction.15" });
         }

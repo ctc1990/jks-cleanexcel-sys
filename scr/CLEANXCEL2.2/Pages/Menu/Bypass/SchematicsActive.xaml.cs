@@ -1,19 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using CLEANXCEL2._2.Functions.EventNotifier;
 using TwinCAT.Ads;
 
@@ -118,8 +108,10 @@ namespace CLEANXCEL2._2.Pages.Menu.Bypass
             mapping.Add(new Mapping { button = H3, input = ".DE10013", output = ".DE10013" });
             mapping.Add(new Mapping { button = SV1_1, input = ".DE10202", output = ".DE10202" });
             mapping.Add(new Mapping { button = Door, input = ".DE10206", output = ".DE10206" }); // Clamp = DE10206, Unclamp = DE10207
+            mapping.Add(new Mapping { button = AV1_20, input = ".DE10306", output = ".DE10306" });
 
             #region new added
+            mapping.Add(new Mapping { button = AV1_20, input = ".DE10306", output = ".DE10306" }); //FEB2024
             //mapping.Add(new Mapping { button = AV1_19, input = ".DE10300", output = ".DE10300" }); //valve not in deactivated
             //mapping.Add(new Mapping { button = AV1_22, input = ".DE10301", output = ".DE10301" });
             //mapping.Add(new Mapping { button = AV1_23, input = ".DE10302", output = ".DE10302" });

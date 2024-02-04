@@ -453,6 +453,25 @@
                     </ToggleButton.RenderTransform>
                 </ToggleButton>
 
+                <ToggleButton Name="AV1_20"                              
+                              IsEnabled="False"
+                              Panel.ZIndex="12"
+                              Cursor="Hand"
+                              Click="EquipmentTrigger_Click"
+                              HorizontalAlignment="Left"
+                              Background="Transparent"
+                              Style="{StaticResource StyleToggleButtonAirValve}"
+                              RenderTransformOrigin="0.5,0.5" Margin="6,100,0,564">
+                    <ToggleButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="90"/>
+                            <TranslateTransform X="37" Y="-80"/>
+                        </TransformGroup>
+                    </ToggleButton.RenderTransform>
+                </ToggleButton>
+
                 <!-- NAMES -->
 
                 <TextBlock x:Name="ProcessChamber" 

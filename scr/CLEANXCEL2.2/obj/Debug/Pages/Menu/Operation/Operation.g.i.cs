@@ -98,7 +98,15 @@ namespace CLEANXCEL2._2.Pages.Menu.Operation {
         #line hidden
         
         
-        #line 144 "..\..\..\..\..\Pages\Menu\Operation\Operation.xaml"
+        #line 134 "..\..\..\..\..\Pages\Menu\Operation\Operation.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.CheckBox AutoTopUp;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 147 "..\..\..\..\..\Pages\Menu\Operation\Operation.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.ProgressBar myrad;
         
@@ -106,7 +114,7 @@ namespace CLEANXCEL2._2.Pages.Menu.Operation {
         #line hidden
         
         
-        #line 152 "..\..\..\..\..\Pages\Menu\Operation\Operation.xaml"
+        #line 155 "..\..\..\..\..\Pages\Menu\Operation\Operation.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Primitives.ToggleButton Start;
         
@@ -114,7 +122,7 @@ namespace CLEANXCEL2._2.Pages.Menu.Operation {
         #line hidden
         
         
-        #line 157 "..\..\..\..\..\Pages\Menu\Operation\Operation.xaml"
+        #line 160 "..\..\..\..\..\Pages\Menu\Operation\Operation.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Shapes.Ellipse StartEllipse;
         
@@ -122,7 +130,7 @@ namespace CLEANXCEL2._2.Pages.Menu.Operation {
         #line hidden
         
         
-        #line 168 "..\..\..\..\..\Pages\Menu\Operation\Operation.xaml"
+        #line 171 "..\..\..\..\..\Pages\Menu\Operation\Operation.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBlock ProcessName;
         
@@ -207,29 +215,38 @@ namespace CLEANXCEL2._2.Pages.Menu.Operation {
             this.LogInterval = ((System.Windows.Controls.ComboBox)(target));
             return;
             case 9:
+            this.AutoTopUp = ((System.Windows.Controls.CheckBox)(target));
             
             #line 134 "..\..\..\..\..\Pages\Menu\Operation\Operation.xaml"
-            ((System.Windows.Controls.Grid)(target)).Loaded += new System.Windows.RoutedEventHandler(this.Grid_Loaded);
+            this.AutoTopUp.Click += new System.Windows.RoutedEventHandler(this.SystemStatus_Click);
             
             #line default
             #line hidden
             return;
             case 10:
-            this.myrad = ((System.Windows.Controls.ProgressBar)(target));
+            
+            #line 137 "..\..\..\..\..\Pages\Menu\Operation\Operation.xaml"
+            ((System.Windows.Controls.Grid)(target)).Loaded += new System.Windows.RoutedEventHandler(this.Grid_Loaded);
+            
+            #line default
+            #line hidden
             return;
             case 11:
+            this.myrad = ((System.Windows.Controls.ProgressBar)(target));
+            return;
+            case 12:
             this.Start = ((System.Windows.Controls.Primitives.ToggleButton)(target));
             
-            #line 155 "..\..\..\..\..\Pages\Menu\Operation\Operation.xaml"
+            #line 158 "..\..\..\..\..\Pages\Menu\Operation\Operation.xaml"
             this.Start.Click += new System.Windows.RoutedEventHandler(this.Start_Click);
             
             #line default
             #line hidden
             return;
-            case 12:
+            case 13:
             this.StartEllipse = ((System.Windows.Shapes.Ellipse)(target));
             return;
-            case 13:
+            case 14:
             this.ProcessName = ((System.Windows.Controls.TextBlock)(target));
             return;
             }

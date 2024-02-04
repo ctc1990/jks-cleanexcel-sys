@@ -188,7 +188,8 @@ namespace CLEANXCEL2._2.Pages.Menu.CurrentStatus
                 new Mapping { button = AV1_23, input = ".Y103_02", output = ".WY10302_15" },
                 new Mapping { button = AV1_24, input = ".Y103_03", output = ".WY10303_15" },
                 new Mapping { button = AV1_25, input = ".Y103_04", output = ".WY10304_15" },
-                new Mapping { button = AV1_26, input = ".Y103_05", output = ".WY10305_15" }
+                new Mapping { button = AV1_26, input = ".Y103_05", output = ".WY10305_15" },
+                new Mapping { button = AV1_20, input = ".Y103_06", output = ".WY10306_15" } //FEB2024
                 #endregion
             };
         }
