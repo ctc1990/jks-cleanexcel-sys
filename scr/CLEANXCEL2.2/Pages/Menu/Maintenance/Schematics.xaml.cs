@@ -181,8 +181,10 @@ namespace CLEANXCEL2._2.Pages.Menu.Maintenance
             mapping.Add(new Mapping { button = Door, input = ".X101_04", output = ".WY10014_15" }); //Open = .WY10015_15 (.X101_03), Close = .WY10014_15 (.X101_04)
             mapping.Add(new Mapping { button = Door, input = ".X101_03", output = ".WY10015_15" }); //Open = .WY10015_15 (.X101_03), Close = .WY10014_15 (.X101_04)
             mapping.Add(new Mapping { button = Lamp, input = ".Y102_13", output = ".WY10213_15" });
-            
-                        //mapping.Add(new Mapping { button = Circulation, input = ".wPumpCircFunction", output = ".wPumpCircFunction" });
+            mapping.Add(new Mapping { button = Filter1, input = ".bFilterFunction01", output = ".bFilterFunction01" });
+            mapping.Add(new Mapping { button = Filter2, input = ".bFilterFunction02", output = ".bFilterFunction02" });
+
+            //mapping.Add(new Mapping { button = Circulation, input = ".wPumpCircFunction", output = ".wPumpCircFunction" });
             //mapping.Add(new Mapping { button = SolventTopUp, input = ".wSolventTopupFunction.15", output = ".wSolventTopupFunction.15" });
         }
 
@@ -221,6 +223,7 @@ namespace CLEANXCEL2._2.Pages.Menu.Maintenance
                     case "Circulation":
                     case "SolventTopUp":
                         break;
+                    case "Filter1":
 
                     default:
                         Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, mapping.Where(x => x.button == toggleButton).First().output, toggleButton.IsChecked.ToString(), "bool");

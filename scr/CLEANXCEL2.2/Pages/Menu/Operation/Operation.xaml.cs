@@ -233,6 +233,10 @@ namespace CLEANXCEL2._2.Pages.Menu.Operation
                                     break;
                             }
                             break;
+                        case "AutoTopUp":
+                            Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, ".bSolventTankTopupFunctionOn", checkbox.IsChecked.ToString(), "bool");
+                            checkbox.IsChecked = null;
+                            break;
                     }
                 }
                 catch { }

@@ -129,6 +129,9 @@
                     <ComboBoxItem>5 s</ComboBoxItem>
                     <ComboBoxItem>10 s</ComboBoxItem>
                 </ComboBox>
+                <CheckBox />
+                <CheckBox />
+                <CheckBox Name="AutoTopUp" Style="{StaticResource CBSubMenuRoles}" Content="Auto Top Up" Click="SystemStatus_Click"/>
             </StackPanel>
             <Grid Grid.Column="3" Width="350"
                 Loaded="Grid_Loaded" VerticalAlignment="Top" Margin="0,40,0,0">

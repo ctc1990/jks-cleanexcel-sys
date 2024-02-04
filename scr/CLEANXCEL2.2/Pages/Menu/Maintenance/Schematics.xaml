@@ -1231,13 +1231,18 @@
             </Grid>
         </Viewbox>
 
-        <StackPanel Grid.Column="0" Margin="20" Visibility="Visible" HorizontalAlignment="Left" VerticalAlignment="Bottom" Orientation="Horizontal">
+        <StackPanel Grid.Column="0" Margin="20,20,20,100" Visibility="Visible" HorizontalAlignment="Left" VerticalAlignment="Bottom" Orientation="Horizontal">
             <ToggleButton Name="Clamp" Style="{StaticResource TBSubMenuRoles}" Content="Clamp" Click="EquipmentTrigger_Click"/>
             <ToggleButton Name="Lamp" Style="{StaticResource TBSubMenuRoles}" Content="Lamp" Click="EquipmentTrigger_Click"/>
             <!--<ToggleButton Name="Circulation" Style="{StaticResource TBSubMenuRoles}" Content="Circulation" Click="EquipmentTrigger_Click"/>-->
             <!--<ToggleButton Name="SolventTopUp" Style="{StaticResource TBSubMenuRoles}" Content="Solvent Top Up" Click="EquipmentTrigger_Click"/>-->
         </StackPanel>
 
+        <StackPanel Grid.Column="0" Margin="20" Visibility="Visible" HorizontalAlignment="Left" VerticalAlignment="Bottom" Orientation="Horizontal">
+            <ToggleButton Name="Filter1" Style="{StaticResource TBSubMenuRoles}" Content="Filter 1" Click="EquipmentTrigger_Click"/>
+            <ToggleButton Name="Filter2" Style="{StaticResource TBSubMenuRoles}" Content="Filter 2" Click="EquipmentTrigger_Click"/>
+        </StackPanel>
+        
         <ScrollViewer Grid.Column="1" Template="{StaticResource StandardScrollViewer}" VerticalScrollBarVisibility="Auto" PanningMode="VerticalOnly">
             <Border Margin="5,0" HorizontalAlignment="Right">
                 <Frame Name="FrameSensor" HorizontalAlignment="Left"/>
