@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\GitLab\jks-cleanexcel-sys\scr\CLEANXCEL2.2\obj\Debug\
+C:\Users\Moon\Documents\GitHub\jks-cleanexcel-sys\scr\CLEANXCEL2.2\obj\Debug\
 CLEANXCEL2._2
 none
 false
 DEBUG;TRACE
-D:\GitLab\jks-cleanexcel-sys\scr\CLEANXCEL2.2\App.xaml
+C:\Users\Moon\Documents\GitHub\jks-cleanexcel-sys\scr\CLEANXCEL2.2\App.xaml
 63571196914
-14-1116821547
-80-1051503367
-291315757237
+15-2048318627
+79-1433991603
+29-365690453
 Dictionaries\Animations.xaml;Dictionaries\Buttons.xaml;Dictionaries\Colors.xaml;Dictionaries\DataGrid.xaml;Dictionaries\Dimensions.xaml;Dictionaries\Fonts.xaml;Dictionaries\FormControls.xaml;Dictionaries\Graph.xaml;Dictionaries\Info.xaml;Dictionaries\ManualModeStyle.xaml;Dictionaries\RangeSlider.xaml;Dictionaries\ScrollViewer.xaml;Dictionaries\Texts.xaml;Intro.xaml;MainWindow.xaml;Pages\Menu\Alarm\CurrentAlarm.xaml;Pages\Menu\Alarm\HistoryAlarm.xaml;Pages\Menu\Alarm\Index.xaml;Pages\Menu\Analytics\Index.xaml;Pages\Menu\Analytics\Graph.xaml;Pages\Menu\Analytics\StatusDiagram.xaml;Pages\Menu\Analytics\ValueDiagram.xaml;Pages\Menu\Bypass\Index.xaml;Pages\Menu\Bypass\SchematicsActive.xaml;Pages\Menu\CurrentStatus\Index.xaml;Pages\Menu\CurrentStatus\Schematics.xaml;Pages\Menu\DefaultSettings\General.xaml;Pages\Menu\DefaultSettings\Index.xaml;Pages\Menu\DefaultSettings\Station1.xaml;Pages\Menu\Index.xaml;Pages\Menu\Maintenance\Restore.xaml;Pages\Menu\Maintenance\Index.xaml;Pages\Menu\Maintenance\Schematics.xaml;Pages\Menu\Maintenance\Sensor.xaml;Pages\Menu\Operation\Index.xaml;Pages\Menu\Operation\Operation.xaml;Pages\Menu\RecipeManagement\Index.xaml;Pages\Menu\RecipeManagement\Part.xaml;Pages\Menu\RecipeManagement\Process.xaml;Pages\Menu\RecipeManagement\Recipe.xaml;Pages\Menu\RecipeManagement\SubProcess.xaml;Pages\Menu\UnderConstruction\UnderConstruction.xaml;Pages\User\Index.xaml;Pages\User\Login.xaml;Pages\User\Register.xaml;Pages\User\Reset.xaml;Pages\User\Roles.xaml;Pages\Window\WindowsMessageBoxInProgress.xaml;Pages\Window\WindowsMessageBox.xaml;UserControls\AlarmRow.xaml;UserControls\Card.xaml;UserControls\ConditionButton.xaml;UserControls\RecipeTableWithoutUS.xaml;UserControls\RecipeTable.xaml;UserControls\ConditionPanel.xaml;UserControls\ConditionRow.xaml;UserControls\Dial.xaml;UserControls\DigitalDisplay.xaml;UserControls\RadialPBar.xaml;UserControls\RangeSlider.xaml;UserControls\aVXTable.xaml;UserControls\Schematics.xaml;UserControls\StandardTable.xaml;
 
-True
+False
 

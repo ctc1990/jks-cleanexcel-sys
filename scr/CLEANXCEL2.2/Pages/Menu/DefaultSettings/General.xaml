@@ -358,7 +358,7 @@
                               HorizontalAlignment="Left"
                               Background="Transparent"
                               Style="{StaticResource StyleToggleButtonAirValve}"
-                              RenderTransformOrigin="0.5,0.5" Margin="-2,546,0,545">
+                              RenderTransformOrigin="0.5,0.5" Margin="-11,546,0,545">
                     <ToggleButton.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -478,24 +478,38 @@
                 </ToggleButton>
 
                 <ToggleButton Name="AV1_20"                              
-                              IsEnabled="False"
+                              IsEnabled="true"
                               Panel.ZIndex="12"
                               Cursor="Hand"
                               Click="EquipmentTrigger_Click"
                               HorizontalAlignment="Left"
                               Background="Transparent"
                               Style="{StaticResource StyleToggleButtonAirValve}"
-                              RenderTransformOrigin="0.5,0.5" Margin="6,100,0,564">
+                              RenderTransformOrigin="0.5,0.5" Margin="120,-40,0,564">
                     <ToggleButton.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
                             <SkewTransform/>
-                            <RotateTransform Angle="90"/>
+                            <RotateTransform/>
                             <TranslateTransform X="37" Y="-80"/>
                         </TransformGroup>
                     </ToggleButton.RenderTransform>
                 </ToggleButton>
 
+                <TextBlock Name="LBLAV120" 
+                           Text="AV1-20"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="-25,300,0,465" HorizontalAlignment="Left">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="180" Y="-318"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+                
                 <!-- NAMES -->
 
                 <TextBlock Name="ProcessChamber" 
@@ -517,7 +531,7 @@
                            Text="WATER SEPARATOR"
                            Panel.ZIndex="14"
                            TextAlignment="Center"
-                           Style="{StaticResource SchName}" RenderTransformOrigin="0.5,0.5" Margin="410,438,320,436">
+                           Style="{StaticResource SchName}" RenderTransformOrigin="0.5,0.5" Margin="498,548,235,543">
                     <TextBlock.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>

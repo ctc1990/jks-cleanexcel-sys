@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CLEANXCEL2.2.exe" size="1311184">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CLEANXCEL2.2.exe" size="1301968">
       <assemblyIdentity name="CLEANXCEL2.2" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>rbd4/w8UXxcAVrxAJfpYFq57A1qQmXV1op12YVgsNac=</dsig:DigestValue>
+        <dsig:DigestValue>ZZruFb0B4tJod6a6JAZR1/KfJSbMexw0FWs7XrUeK4k=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -198,6 +198,18 @@
       </hash>
     </dependentAssembly>
   </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TwinCAT.Ads.dll" size="401408">
+      <assemblyIdentity name="TwinCAT.Ads" version="2.2.56.0" publicKeyToken="180016CD49E5E8C3" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>T8LuqrPqn4+MFB9BlG7/3+Tqpdlnmi3P3wa65AAlFUw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
   <file name="CLEANXCEL2.2.exe.config" size="243">
     <hash>
       <dsig:Transforms>
@@ -207,130 +219,130 @@
       <dsig:DigestValue>7FWJsMHU7a7sW4f+FUraq5E0MUfYN1byplFWSMGBd64=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Images\Icons\icon_Alarms_Active.svg" size="1573">
+  <file name="Images\Icons\icon_Alarms_Active.svg" size="1592">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>T7+4WRZnDZ/ulKakgZojKw4TqOrnZMathBiaHm4VChI=</dsig:DigestValue>
+      <dsig:DigestValue>HVv18HmN6sYAOHyXjSyH9H2xkp6NIhcC5Rmtm4Wx3N4=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Images\Icons\icon_Credits_Active.svg" size="2280">
+  <file name="Images\Icons\icon_Credits_Active.svg" size="2319">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>YMn6NA3hNCMa1EoGP/FqqipWFVTUXHe0Ch15t+mSSiI=</dsig:DigestValue>
+      <dsig:DigestValue>ei95jmwyIFGiwoOWctqdYNKNsaDkWnHAbVERvDLDGKs=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Images\Icons\icon_CurrentStatus_Active.svg" size="2587">
+  <file name="Images\Icons\icon_CurrentStatus_Active.svg" size="2625">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>ZslQATvIYrKat6VMINGbxmBRj+c+GWdPHgWSzFfQaJA=</dsig:DigestValue>
+      <dsig:DigestValue>hGyrJGUKQo7mQkYc1ewMRPij/Zlqs4QnkngSpcN2JyM=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Images\Icons\icon_DefaultSettings_Active.svg" size="1950">
+  <file name="Images\Icons\icon_DefaultSettings_Active.svg" size="1969">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>ECezM71uEiAY0DjVYNNvK7kLEkinJVGbcLaEW0oWe4s=</dsig:DigestValue>
+      <dsig:DigestValue>/JXkqGO0m5PhbBzb+d8QqzhTfUmKDQ8i5NtRbv2EoTw=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Images\Icons\icon_KnowledgeBase_Active.svg" size="3513">
+  <file name="Images\Icons\icon_KnowledgeBase_Active.svg" size="3555">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>NHjbF+QQjeVgDw3K2BPtsvk72shshxj/UZwtvluPXy4=</dsig:DigestValue>
+      <dsig:DigestValue>85dXeDI5oAlwH5+TIOIv7O0yYJuYoJJxy0yu+UIol/Q=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Images\Icons\icon_LogIn_Active.svg" size="973">
+  <file name="Images\Icons\icon_LogIn_Active.svg" size="987">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>y788wAVDCUEK+gZbKW8KoKE3dZJC2+r5+/J0b3yvnCg=</dsig:DigestValue>
+      <dsig:DigestValue>2Myiw2xnqAqoMDp14y9mo0NmEgQMeGCrh0qJgztM780=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Images\Icons\icon_LogOut_Active.svg" size="968">
+  <file name="Images\Icons\icon_LogOut_Active.svg" size="982">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>tN54ldq6mSvn7zX3lluB5mT/wNlGIjhiXLXlT2hilig=</dsig:DigestValue>
+      <dsig:DigestValue>LcoQe2pUMjxhV2bXxDCi53z9Zb4vGSi0mkDxfrwKi6Y=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Images\Icons\icon_MaintenanceMode_Active.svg" size="3459">
+  <file name="Images\Icons\icon_MaintenanceMode_Active.svg" size="3495">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>EvvYAoOQh16y5D4hFaNziD3vIr/zluo97XaZrz+4qNA=</dsig:DigestValue>
+      <dsig:DigestValue>8YSq9CUUqSVLaIo821kNFcNlQVmLyXM6R3niCZkMzhw=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Images\Icons\icon_Manuals_Active.svg" size="2386">
+  <file name="Images\Icons\icon_Manuals_Active.svg" size="2409">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>mYO6R9KJT0dck4aFi6cf2Yb607RPB+XctdNy1iuOeF8=</dsig:DigestValue>
+      <dsig:DigestValue>oQYhwtd0rMLqO6YibqVcHfF/7/riY/RozUHszJSVLM4=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Images\Icons\icon_OperationMode_Active.svg" size="10033">
+  <file name="Images\Icons\icon_OperationMode_Active.svg" size="10138">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>AUv0eVhjnF46uQ7WcNMbKNBah6MrEbgOLPdof1xRVxU=</dsig:DigestValue>
+      <dsig:DigestValue>cZXdEzyY8R/8iDcSNiv9KounUr89nI5Nlb+d3pmSbns=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Images\Icons\icon_Password_Active.svg" size="1564">
+  <file name="Images\Icons\icon_Password_Active.svg" size="1581">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>MGHPIAHjskP+DZqXDZlo9+PvIsKD/W+E76vbY/HnUD0=</dsig:DigestValue>
+      <dsig:DigestValue>4J/W2aDg1NsoslReiRhpkc32IpFCt2gecdW1yn+3RII=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Images\Icons\icon_RecipeManagement_Active.svg" size="3278">
+  <file name="Images\Icons\icon_RecipeManagement_Active.svg" size="3319">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>SVzHYX3O3APi1AlKMGMu//jHSjIH8bMroHKk8n1mFHc=</dsig:DigestValue>
+      <dsig:DigestValue>lgeno9xJm8Ux852Zm5h7a0pe0jhLPSh/oRwiVhA+bvI=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Images\Icons\icon_Register_Active.svg" size="1238">
+  <file name="Images\Icons\icon_Register_Active.svg" size="1254">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>kq2cPtMnq66/6wEwYe/b3wHLhfNHenuf4UYVoPWh578=</dsig:DigestValue>
+      <dsig:DigestValue>tYQMwmk2QwfsT+vRVYudAQpOLSwJTVACeLASojJptU0=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Images\Icons\icon_Version_Active.svg" size="2010">
+  <file name="Images\Icons\icon_Version_Active.svg" size="2038">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>WioJsUGoGPwOVpDuHrDqA3zGYbHHIWaMoABPQQU1VTw=</dsig:DigestValue>
+      <dsig:DigestValue>XkE8s2Dntk2oGmXJ1Hkaw9mMlqZRK6LUBudRXAm/AdI=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Images\Logos\logo_CX.ico" size="115404">
@@ -340,6 +352,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>3WKp9NkQa9wM9kaUyb+GaTU8o0ZDEuH9YoVH7p4w+sk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Schematic\Schematic.svg" size="16396">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>stLaLopZjG34ApDA0HbUvlsC509IxlzU587ngT0LlQE=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

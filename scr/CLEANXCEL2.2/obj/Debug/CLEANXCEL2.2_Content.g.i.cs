@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/schematic/schematic.svg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/icons/icon_alarms_active.svg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/icons/icon_credits_active.svg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/icons/icon_currentstatus_active.svg")]

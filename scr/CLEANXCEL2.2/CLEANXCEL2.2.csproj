@@ -591,9 +591,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Schematic\Schematic.svg">
+    <Content Include="Images\Schematic\Schematic.svg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
+    </Content>
     <Resource Include="Images\Schematic\Equipments_Ultrasonic_Disabled.svg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>

@@ -17,15 +17,14 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <Viewbox Grid.Column="0" Stretch="Uniform" Margin="0,-40" Loaded="Viewbox_Loaded">
+        <Viewbox Grid.Column="0" Stretch="Uniform" Margin="0,-40,0,0" Loaded="Viewbox_Loaded">
             <Grid Name="SchematicDiagram" HorizontalAlignment="Center" Margin="0"
                   Opacity="1">
 
                 <svgc:SvgViewbox Source="/Images/Schematic/Schematic.svg"
-                                 HorizontalAlignment="Left"
                                  Panel.ZIndex="4"
                                  Margin="40,40,40,80"
-                                 Height="760"/>
+                                 Height="760" HorizontalAlignment="Left"/>
 
                 <!-- EQUIPMENTS-->
 
@@ -355,7 +354,7 @@
                               HorizontalAlignment="Left"
                               Background="Transparent"
                               Style="{StaticResource StyleToggleButtonAirValve}"
-                              RenderTransformOrigin="0.5,0.5" Margin="-2,437,0,437">
+                              RenderTransformOrigin="0.5,0.5" Margin="-11,437,0,437">
                     <ToggleButton.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -474,20 +473,19 @@
                     </ToggleButton.RenderTransform>
                 </ToggleButton>
 
-                <ToggleButton Name="AV1_20"                              
-                              IsEnabled="False"
+                <ToggleButton Name="AV1_20"                                                         
                               Panel.ZIndex="12"
                               Cursor="Hand"
                               Click="EquipmentTrigger_Click"
                               HorizontalAlignment="Left"
                               Background="Transparent"
                               Style="{StaticResource StyleToggleButtonAirValve}"
-                              RenderTransformOrigin="0.5,0.5" Margin="6,100,0,564">
+                              RenderTransformOrigin="0.5,0.5" Margin="120,-40,0,564">
                     <ToggleButton.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
                             <SkewTransform/>
-                            <RotateTransform Angle="90"/>
+                            <RotateTransform/>
                             <TranslateTransform X="37" Y="-80"/>
                         </TransformGroup>
                     </ToggleButton.RenderTransform>
@@ -514,7 +512,7 @@
                            Text="WATER SEPARATOR"
                            Panel.ZIndex="14"
                            TextAlignment="Center"
-                           Style="{StaticResource SchName}" RenderTransformOrigin="0.5,0.5" Margin="410,438,320,436">
+                           Style="{StaticResource SchName}" RenderTransformOrigin="0.5,0.5" Margin="498,548,235,543">
                     <TextBlock.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -892,6 +890,20 @@
                     </TextBlock.RenderTransform>
                 </TextBlock>
 
+                <TextBlock Name="LBLAV120" 
+                           Text="AV1-20"
+                           Panel.ZIndex="14"
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="-25,300,0,465" HorizontalAlignment="Left">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="180" Y="-318"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
                 <TextBlock Name="LBLSV101" 
                            Text="SV1-1"
                            Panel.ZIndex="14"
@@ -1234,6 +1246,7 @@
         <StackPanel Grid.Column="0" Margin="20,20,20,100" Visibility="Visible" HorizontalAlignment="Left" VerticalAlignment="Bottom" Orientation="Horizontal">
             <ToggleButton Name="Clamp" Style="{StaticResource TBSubMenuRoles}" Content="Clamp" Click="EquipmentTrigger_Click"/>
             <ToggleButton Name="Lamp" Style="{StaticResource TBSubMenuRoles}" Content="Lamp" Click="EquipmentTrigger_Click"/>
+
             <!--<ToggleButton Name="Circulation" Style="{StaticResource TBSubMenuRoles}" Content="Circulation" Click="EquipmentTrigger_Click"/>-->
             <!--<ToggleButton Name="SolventTopUp" Style="{StaticResource TBSubMenuRoles}" Content="Solvent Top Up" Click="EquipmentTrigger_Click"/>-->
         </StackPanel>

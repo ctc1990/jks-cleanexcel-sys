@@ -181,8 +181,8 @@ namespace CLEANXCEL2._2.Pages.Menu.Maintenance
             mapping.Add(new Mapping { button = Door, input = ".X101_04", output = ".WY10014_15" }); //Open = .WY10015_15 (.X101_03), Close = .WY10014_15 (.X101_04)
             mapping.Add(new Mapping { button = Door, input = ".X101_03", output = ".WY10015_15" }); //Open = .WY10015_15 (.X101_03), Close = .WY10014_15 (.X101_04)
             mapping.Add(new Mapping { button = Lamp, input = ".Y102_13", output = ".WY10213_15" });
-            mapping.Add(new Mapping { button = Filter1, input = ".bFilterFunction01", output = ".bFilterFunction01" });
-            mapping.Add(new Mapping { button = Filter2, input = ".bFilterFunction02", output = ".bFilterFunction02" });
+            mapping.Add(new Mapping { button = Filter1, input = ".bFilterFunction01", output = ".bFilterFunction01" });//feb2024
+            mapping.Add(new Mapping { button = Filter2, input = ".bFilterFunction02", output = ".bFilterFunction02" });//feb2024
 
             //mapping.Add(new Mapping { button = Circulation, input = ".wPumpCircFunction", output = ".wPumpCircFunction" });
             //mapping.Add(new Mapping { button = SolventTopUp, input = ".wSolventTopupFunction.15", output = ".wSolventTopupFunction.15" });
@@ -224,7 +224,25 @@ namespace CLEANXCEL2._2.Pages.Menu.Maintenance
                     case "SolventTopUp":
                         break;
                     case "Filter1":
-
+                        if (toggleButton.IsChecked == true)
+                        {
+                            Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, mapping.Where(x => x.button == toggleButton).FirstOrDefault().output, "true", "bool");                           
+                        }
+                        else
+                        {
+                            Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, mapping.Where(x => x.button == toggleButton).FirstOrDefault().output, "false", "bool");
+                        }
+                        break;
+                    case "Filter2":
+                        if (toggleButton.IsChecked == true)
+                        {
+                            Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, mapping.Where(x => x.button == toggleButton).FirstOrDefault().output, "true", "bool");
+                        }
+                        else
+                        {
+                            Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, mapping.Where(x => x.button == toggleButton).FirstOrDefault().output, "false", "bool");
+                        }
+                        break;
                     default:
                         Functions.ADS.ADS_ReadWrite.ADS_WriteValue(adsClient, mapping.Where(x => x.button == toggleButton).First().output, toggleButton.IsChecked.ToString(), "bool");
 
@@ -252,10 +270,12 @@ namespace CLEANXCEL2._2.Pages.Menu.Maintenance
         {
             try
             {
-                Hashtable hashtable = Functions.SQL.Query.ExecuteLanguageQuery("117,118,119,272");
+                Hashtable hashtable = Functions.SQL.Query.ExecuteLanguageQuery("117,118,119,272,277,278");
 
                 Clamp.Content = hashtable[117].ToString();
                 Lamp.Content = hashtable[272].ToString();
+                Filter1.Content = hashtable[277].ToString();
+                Filter2.Content = hashtable[278].ToString();
 
                 //Circulation.Content = hashtable[118].ToString();
                 //SolventTopUp.Content = hashtable[119].ToString();
