@@ -35,6 +35,7 @@ namespace CLEANXCEL2._2.Pages.Menu.Maintenance
         private bool[] StorageTank1Level = new bool[] { false, false, false, false };
         private bool[] StorageTank2Level = new bool[] { false };
         private bool[] DistillationTankLevel = new bool[] { false, false, false, false };
+        private bool[] Compressor = new bool[] { false, false };
 
         private static int[] separator = new int[] { 13, 17 };
 
@@ -148,6 +149,14 @@ namespace CLEANXCEL2._2.Pages.Menu.Maintenance
             DigitalDisplay9.Logic = "Intermediate";
             DigitalDisplay9.ValueSet = 0.00;
             DigitalDisplay9.ActualValue = 0.00;
+
+            DigitalDisplay10.EqName = "Compressor";
+            DigitalDisplay10.MeasurementName = "Pressure";
+            DigitalDisplay10.Unit = "kPa";
+            DigitalDisplay10.LogicName = "Level";
+            DigitalDisplay10.Logic = "Intermediate";
+            DigitalDisplay10.ValueSet = 0.00;
+            DigitalDisplay10.ActualValue = 0.00;
         }
 
         private async void StatusOnChange(object sender, AdsNotificationEventArgs e)
@@ -238,6 +247,12 @@ namespace CLEANXCEL2._2.Pages.Menu.Maintenance
                 case 16:
                     DigitalDisplay8.ValueSet = status;   // .DSWeberEnclosure[1].DSWeberGenerator[1].DSWeberMulFreqSwitching.iFreqOutput_TS
                     break;
+                case 33:
+                    DigitalDisplay10.ActualValue = status;   // .ARrStnTempPV[7]
+                    break;
+                case 34:
+                    DigitalDisplay10.ValueSet = status;
+                    break;
             }
         }
 
@@ -303,6 +318,16 @@ namespace CLEANXCEL2._2.Pages.Menu.Maintenance
                 case 32:
                     VacuumTankLevel[0] = !status;
                     await IndicateHigherLevel1(VacuumTankLevel, DigitalDisplay9);
+                    //DigitalDisplay9.Logic = hashtable[160].ToString();      // Max
+                    break;
+                case 35:
+                    Compressor[0] = !status;
+                    await IndicateHigherLevel1(Compressor, DigitalDisplay10);
+                    //DigitalDisplay9.Logic = hashtable[160].ToString();      // Max
+                    break;
+                case 36:
+                    Compressor[1] = !status;
+                    await IndicateLowerLevel1(Compressor, DigitalDisplay10);
                     //DigitalDisplay9.Logic = hashtable[160].ToString();      // Max
                     break;
             }
@@ -458,7 +483,10 @@ namespace CLEANXCEL2._2.Pages.Menu.Maintenance
 
             // Vacuum Tank Level
             ".X101_15",                                                                             // 32   - Max
+            //Compressor
 
+            ".ARrStnTempPV[7]",                                                                     // 33
+            ".ARrStnTempSV[7]"                                                                      // 34
             // Manual Ultrasonic Value
             //".ARiStnManualUSBtmAsv[1]",
         };
@@ -476,7 +504,7 @@ namespace CLEANXCEL2._2.Pages.Menu.Maintenance
         {
             try
             {
-                hashtable = Functions.SQL.Query.ExecuteLanguageQuery("108,109,110,111,112,116,135,136,154,155,156,162,921,923,926");
+                hashtable = Functions.SQL.Query.ExecuteLanguageQuery("108,109,110,111,112,116,135,136,154,155,156,162,921,923,926,986");
 
                 // Process Chamber
                 DigitalDisplay1.EqName = hashtable[116].ToString();
@@ -557,6 +585,14 @@ namespace CLEANXCEL2._2.Pages.Menu.Maintenance
                 DigitalDisplay9.Logic = "Regular";
                 DigitalDisplay9.ValueSet = 0.00;
                 DigitalDisplay9.ActualValue = 0.00;
+
+                DigitalDisplay10.EqName = hashtable[986].ToString();
+                DigitalDisplay10.MeasurementName = hashtable[156].ToString();
+                DigitalDisplay10.Unit = "kPa";
+                DigitalDisplay10.LogicName = hashtable[154].ToString();
+                DigitalDisplay10.Logic = "Regular";
+                DigitalDisplay10.ValueSet = 0.00;
+                DigitalDisplay10.ActualValue = 0.00;
 
                 hashtable = Functions.SQL.Query.ExecuteLanguageQuery("157,158,159,160,161");
             }

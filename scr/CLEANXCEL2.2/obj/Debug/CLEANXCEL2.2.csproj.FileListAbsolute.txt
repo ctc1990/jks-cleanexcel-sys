@@ -2384,3 +2384,4 @@ C:\Users\Moon\Documents\GitHub\jks-cleanexcel-sys\scr\CLEANXCEL2.2\obj\Debug\CLE
 C:\Users\Moon\Documents\GitHub\jks-cleanexcel-sys\scr\CLEANXCEL2.2\obj\Debug\CLEANXCEL2.2.exe.manifest
 C:\Users\Moon\Documents\GitHub\jks-cleanexcel-sys\scr\CLEANXCEL2.2\obj\Debug\CLEANXCEL2.2.application
 C:\Users\Moon\Documents\GitHub\jks-cleanexcel-sys\scr\CLEANXCEL2.2\obj\Debug\CLEANXCEL2.2.csproj.CopyComplete
+D:\GitLab\jks-cleanexcel-sys\scr\CLEANXCEL2.2\bin\Debug\Images\Schematic\Schematic.svg

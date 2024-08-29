@@ -459,12 +459,12 @@
                               HorizontalAlignment="Left"
                               Background="Transparent"
                               Style="{StaticResource StyleToggleButtonAirValve}"
-                              RenderTransformOrigin="0.5,0.5" Margin="120,-40,0,564">
+                              RenderTransformOrigin="0.5,0.5" Margin="122,-70,0,564">
                     <ToggleButton.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
                             <SkewTransform/>
-                            <RotateTransform/>
+                            <RotateTransform Angle="90"/>
                             <TranslateTransform X="37" Y="-80"/>
                         </TransformGroup>
                     </ToggleButton.RenderTransform>
@@ -473,7 +473,7 @@
                 <TextBlock Name="LBLAV120" 
                            Text="AV1-20"
                            Panel.ZIndex="14"
-                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5" Margin="-25,300,0,465" HorizontalAlignment="Left">
+                           Style="{StaticResource SchLabel}" RenderTransformOrigin="0.5,0.5"   HorizontalAlignment="Left">
                     <TextBlock.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>

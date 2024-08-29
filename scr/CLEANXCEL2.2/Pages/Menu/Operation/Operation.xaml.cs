@@ -2,6 +2,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -69,6 +70,7 @@ namespace CLEANXCEL2._2.Pages.Menu.Operation
                     hconnect[4] = adsClient.AddDeviceNotification(".bStn1DoorOpenCompleted", adsDataStream, 106, 1, AdsTransMode.OnChange, 50, 0, null);
                     hconnect[5] = adsClient.AddDeviceNotification(".bStn1DoorCloseCompleted", adsDataStream, 107, 1, AdsTransMode.OnChange, 50, 0, null);
                     hconnect[6] = adsClient.AddDeviceNotification(".bBasketCfmEn", adsDataStream, 108, 1, AdsTransMode.OnChange, 50, 0, null);
+                    hconnect[7] = adsClient.AddDeviceNotification(".X101_07", adsDataStream, 109, 1, AdsTransMode.OnChange, 50, 0, null);
 
                     adsClient.AdsNotification += new AdsNotificationEventHandler(StatusOnChange);
                 }
@@ -82,7 +84,7 @@ namespace CLEANXCEL2._2.Pages.Menu.Operation
         private void StatusOnChange(object sender, AdsNotificationEventArgs e)
         {
             try
-            {
+            {                
                 if (e.NotificationHandle == hconnect[0])
                 {
                     int value = binRead.ReadInt16();
@@ -135,6 +137,10 @@ namespace CLEANXCEL2._2.Pages.Menu.Operation
                         StartEllipse.Fill = (Brush)FindResource("CWhite");
                     }
                 }
+                else
+                {
+                    AutoTopUp.Visibility = e.NotificationHandle == hconnect[7] ? 0 : (Visibility)1;
+                }
             }
             catch
             {
@@ -145,7 +151,7 @@ namespace CLEANXCEL2._2.Pages.Menu.Operation
         private void Initialize()
         {
             //LoadPartName();
-            LoadRecipeName();
+            LoadRecipeName();           
         }
 
         private void LoadRecipeName()

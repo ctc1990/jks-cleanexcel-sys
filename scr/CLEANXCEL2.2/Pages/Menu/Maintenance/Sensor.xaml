@@ -22,6 +22,7 @@
             <usercontrols:DigitalDisplay x:Name="DigitalDisplay1"/>
             <usercontrols:DigitalDisplay x:Name="DigitalDisplay4"/>
             <usercontrols:DigitalDisplay x:Name="DigitalDisplay7"/>
+            <usercontrols:DigitalDisplay x:Name="DigitalDisplay10"/>
         </StackPanel>
 
         <StackPanel Grid.Column="1" Loaded="StackPanel_Loaded">
